@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <!-- Background -->
-  <rect width="512" height="512" rx="112" fill="#F5F1EC"/>
-  <!-- Dumbbell icon, centered, clay color -->
+  <rect width="512" height="512" rx="112" fill="#F9E8E8"/>
+  <!-- Dumbbell icon, centered, soft pink -->
   <!-- Left plate -->
-  <rect x="80" y="210" width="36" height="92" rx="12" fill="#C17B5C"/>
+  <rect x="80" y="210" width="36" height="92" rx="12" fill="#E8A0A0"/>
   <!-- Left bar connector -->
-  <rect x="116" y="232" width="30" height="48" rx="6" fill="#C17B5C"/>
+  <rect x="116" y="232" width="30" height="48" rx="6" fill="#E8A0A0"/>
   <!-- Bar -->
-  <rect x="146" y="244" width="220" height="24" rx="8" fill="#C17B5C"/>
+  <rect x="146" y="244" width="220" height="24" rx="8" fill="#E8A0A0"/>
   <!-- Right bar connector -->
-  <rect x="366" y="232" width="30" height="48" rx="6" fill="#C17B5C"/>
+  <rect x="366" y="232" width="30" height="48" rx="6" fill="#E8A0A0"/>
   <!-- Right plate -->
-  <rect x="396" y="210" width="36" height="92" rx="12" fill="#C17B5C"/>
+  <rect x="396" y="210" width="36" height="92" rx="12" fill="#E8A0A0"/>
 </svg>
