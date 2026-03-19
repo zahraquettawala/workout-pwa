@@ -6,13 +6,13 @@ const sans = DM_Sans({ subsets: ['latin'], variable: '--font-sans' });
 const serif = DM_Serif_Display({ subsets: ['latin'], weight: '400', variable: '--font-serif' });
 
 export const metadata: Metadata = {
-  title: 'My Workouts',
+  title: 'Betterment Shredded',
   description: 'Your personal workout tracker',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'My Workouts',
+    title: 'Betterment Shredded',
   },
 };
 

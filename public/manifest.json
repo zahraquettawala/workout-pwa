@@ -1,6 +1,6 @@
 {
-  "name": "My Workouts",
-  "short_name": "Workouts",
+  "name": "Betterment Shredded",
+  "short_name": "Betterment",
   "description": "Your personal workout tracker",
   "start_url": "/",
   "display": "standalone",
