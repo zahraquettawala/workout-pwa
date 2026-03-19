@@ -5,9 +5,9 @@ import { useState, useEffect } from 'react';
 const WORK = 45;
 const REST = 15;
 
-type Props = { exercises: string[] };
+type Props = { exercises: string[]; forceCompleted?: boolean };
 
-export default function AbsTimer({ exercises }: Props) {
+export default function AbsTimer({ exercises, forceCompleted }: Props) {
   const [idx, setIdx] = useState(0);
   const [phase, setPhase] = useState<'idle' | 'work' | 'rest'>('idle');
   const [seconds, setSeconds] = useState(WORK);
@@ -65,8 +65,9 @@ export default function AbsTimer({ exercises }: Props) {
   const dash = circ * progress;
 
   // Color: work = mauve, rest = sage, idle/done = muted
-  const color = done ? 'var(--text-muted)' : isWork ? 'var(--mauve)' : 'var(--sage)';
-  const label = done ? 'DONE' : phase === 'idle' ? 'READY' : isWork ? 'WORK' : 'REST';
+  const isDone = done || !!forceCompleted;
+  const color = isDone ? 'var(--text-muted)' : isWork ? 'var(--mauve)' : 'var(--sage)';
+  const label = isDone ? 'DONE' : phase === 'idle' ? 'READY' : isWork ? 'WORK' : 'REST';
 
   return (
     <div className="px-4 pb-5 pt-4 space-y-4">
@@ -106,7 +107,7 @@ export default function AbsTimer({ exercises }: Props) {
               </p>
             </>
           )}
-          {done && (
+          {isDone && (
             <p className="text-sm font-medium" style={{ color: 'var(--sage)' }}>Circuit complete!</p>
           )}
           <div className="flex gap-2 mt-1">
@@ -140,7 +141,7 @@ export default function AbsTimer({ exercises }: Props) {
       <div>
         {exercises.map((ex, i) => {
           const isActive = phase !== 'idle' && i === idx;
-          const isPast = i < idx || done;
+          const isPast = i < idx || isDone;
           return (
             <div
               key={i}

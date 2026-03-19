@@ -13,6 +13,7 @@ type ExerciseItemProps = {
   note?: string;
   isSuperset?: boolean;
   durationSec?: number;
+  forceChecked?: boolean;
 };
 
 export default function ExerciseItem({
@@ -26,9 +27,11 @@ export default function ExerciseItem({
   note,
   isSuperset,
   durationSec,
+  forceChecked,
 }: ExerciseItemProps) {
   const storageKey = `weight_${dayId}_${id}`;
   const [checked, setChecked] = useState(false);
+  const isChecked = forceChecked || checked;
   const [weight, setWeight] = useState<number | undefined>(defaultWeight);
   const [editing, setEditing] = useState(false);
   const [inputVal, setInputVal] = useState('');
@@ -87,14 +90,14 @@ export default function ExerciseItem({
 
   return (
     <div
-      className={`flex items-center gap-3 py-3.5 transition-opacity ${checked ? 'opacity-40' : ''} ${isSuperset ? 'pl-5' : ''}`}
+      className={`flex items-center gap-3 py-3.5 transition-opacity ${isChecked ? 'opacity-40' : ''} ${isSuperset ? 'pl-5' : ''}`}
       style={isSuperset ? { borderLeft: '2px solid var(--accent-border)' } : {}}
     >
       {/* Checkbox */}
       <button
         onClick={() => setChecked((c) => !c)}
         className="shrink-0 w-5 h-5 rounded-full flex items-center justify-center transition-all"
-        style={checked ? {
+        style={isChecked ? {
           background: 'var(--accent)',
           border: '2px solid var(--accent)',
         } : {
@@ -102,7 +105,7 @@ export default function ExerciseItem({
           border: '1.5px solid var(--border)',
         }}
       >
-        {checked && (
+        {isChecked && (
           <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
             <path d="M1 4l2.5 2.5L9 1" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
