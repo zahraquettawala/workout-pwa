@@ -18,9 +18,11 @@ export default function Home() {
       <DayNav selected={selected} today={today} onChange={setSelected} />
       <div className="flex-1 overflow-y-auto">
         <WorkoutView workout={workout} />
-        <section className="mx-4 mb-4 rounded-2xl overflow-hidden" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
-          <WeightTracker />
-        </section>
+        {selected === 'weekend' && (
+          <section className="mx-4 mb-4 rounded-2xl overflow-hidden" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+            <WeightTracker />
+          </section>
+        )}
         {/* Rest Timer */}
         <section className="mx-4 mb-10 rounded-2xl overflow-hidden" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
           <div className="flex items-center gap-2 px-4 py-3" style={{ borderBottom: '1px solid var(--border-light)' }}>
