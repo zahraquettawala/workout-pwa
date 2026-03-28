@@ -23,7 +23,7 @@ export default function Home() {
           </section>
         )}
         <p className="text-center text-sm pb-10 pt-2" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-serif)' }}>
-          don't forget to stretch & drink your water babe!
+          don't forget to stretch babe!
         </p>
       </div>
     </div>

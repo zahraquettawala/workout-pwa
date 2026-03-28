@@ -40,6 +40,9 @@ export default function WorkoutView({ workout }: Props) {
     <div className="px-4 pb-6 space-y-4 pt-5">
       {/* Header */}
       <div className="pb-1">
+        <p className="text-xs font-medium tracking-[0.12em] uppercase mb-2" style={{ color: 'var(--accent)' }}>
+          Hey Zahra, keep going!
+        </p>
         <h1
           className="text-3xl tracking-tight leading-none"
           style={{ fontFamily: 'var(--font-serif)', color: 'var(--text)' }}
