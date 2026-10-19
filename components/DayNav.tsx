@@ -1,6 +1,7 @@
 'use client';
 
 const DAYS = [
+  { id: 'today', label: 'TODAY' },
   { id: 'monday', label: 'MON' },
   { id: 'tuesday', label: 'TUE' },
   { id: 'thursday', label: 'THU' },
