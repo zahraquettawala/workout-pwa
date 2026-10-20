@@ -1,42 +1,51 @@
 {
-  "date": "2026-10-19",
-  "title": "Monday home workout",
-  "subtitle": "45 min · run is the main event",
-  "feeling": "Tired after travel, heavy from a big meal, want to sweat on the run.",
-  "note": "Start easy and build. Lower slowly (3 sec) on every lift, and push the 12 min run to comfortably hard.",
+  "date": "2026-10-20",
+  "title": "Tuesday home workout",
+  "subtitle": "~38 min · all indoors · jump rope is the cardio",
+  "feeling": "Dark out, at home, want something different from yesterday's squat/push-up/row/run day.",
+  "note": "Different moves from yesterday: single-leg and side-to-side legs, shoulders and arms instead of chest and back, jump rope intervals instead of the run. Lower slowly (3 sec) on every lift. Backyard in the dark: porch light on, flattest spot, swap skaters for high knees if footing feels off.",
   "sections": [
     {
-      "label": "Warm-up",
+      "label": "Warm-up · 4 min",
       "color": "sage",
       "items": [
-        { "id": "warmup", "name": "Hip + back mobility, jump rope", "detail": "3 min" }
+        { "id": "warm-rope", "name": "Easy jump rope", "detail": "2 min" },
+        { "id": "warm-mobility", "name": "Glute bridges + arm circles", "detail": "2 min" }
       ]
     },
     {
-      "label": "Strength · rest 45 sec",
+      "label": "Circuit A · 3 rounds · rest 60 sec",
       "color": "accent",
       "items": [
-        { "id": "squat", "name": "Goblet squat (slow tempo)", "detail": "3 x 10" },
-        { "id": "pushups", "name": "Push-ups", "detail": "3 x 10" },
-        { "id": "row", "name": "Bent-over row (15-20 lb)", "detail": "3 x 12" },
-        { "id": "rdl", "name": "DB Romanian deadlift (20s)", "detail": "3 x 12" }
+        { "id": "rev-lunge", "name": "Reverse lunge (15 lb each hand)", "detail": "10 / leg" },
+        { "id": "shoulder-press", "name": "Standing DB shoulder press (15s)", "detail": "10" },
+        { "id": "lateral-walk", "name": "Banded lateral walk", "detail": "12 steps each way" },
+        { "id": "reverse-fly", "name": "Bent-over reverse fly (5-10 lb)", "detail": "12" }
+      ]
+    },
+    {
+      "label": "Circuit B · 3 rounds · rest 60 sec",
+      "color": "accent",
+      "items": [
+        { "id": "sl-bridge", "name": "Single-leg glute bridge", "detail": "10 / leg" },
+        { "id": "curl", "name": "DB curl (10-15 lb)", "detail": "12" },
+        { "id": "oh-triceps", "name": "Overhead triceps extension (15 lb)", "detail": "12" },
+        { "id": "skaters", "name": "Skater hops", "detail": "20 total" }
       ]
     },
     {
       "label": "Core · 2 rounds",
       "color": "mauve",
       "items": [
-        { "id": "bicycle", "name": "Bicycle crunches", "detail": "20 total" },
-        { "id": "twists", "name": "Russian twists (10 lb)", "detail": "20 total" }
+        { "id": "dead-bug", "name": "Dead bug", "detail": "10 / side" },
+        { "id": "side-plank", "name": "Side plank", "detail": "30 sec / side" }
       ]
     },
     {
-      "label": "Run outside · 18 min",
+      "label": "Jump rope finisher · 8 min",
       "color": "neutral",
       "items": [
-        { "id": "run-easy", "name": "Easy jog", "detail": "3 min" },
-        { "id": "run-push", "name": "Push pace, comfortably hard", "detail": "12 min" },
-        { "id": "run-cool", "name": "Easy cooldown jog", "detail": "3 min" }
+        { "id": "rope-intervals", "name": "30 sec fast / 30 sec easy", "detail": "8 rounds" }
       ]
     }
   ]
