@@ -201,12 +201,11 @@ export default function TodayView() {
                 return (
                   <div
                     key={item.id}
-                    className="flex items-center gap-2"
                     style={i < section.items.length - 1 ? { borderBottom: `1px solid ${c.border}` } : {}}
                   >
                     <button
                       onClick={() => toggle(item.id)}
-                      className={`flex-1 min-w-0 flex items-center gap-3 py-3.5 text-left transition-opacity ${isDone ? 'opacity-40' : ''}`}
+                      className={`w-full flex items-center gap-3 py-3.5 text-left transition-opacity ${isDone ? 'opacity-40' : ''}`}
                     >
                       <span
                         className="shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
@@ -226,13 +225,14 @@ export default function TodayView() {
                       )}
                     </button>
                     {segments !== null && !isDone && (
-                      <ItemTimer
-                        key={`${item.id}-${segments.length}-${segments[0].sec}`}
-                        name={item.name}
-                        segments={segments}
-                        color={c.main}
-                        onComplete={() => markDone(item.id)}
-                      />
+                      <div className="pb-3.5">
+                        <ItemTimer
+                          key={`${item.id}-${segments.length}-${segments[0].sec}`}
+                          segments={segments}
+                          color={c.main}
+                          onComplete={() => markDone(item.id)}
+                        />
+                      </div>
                     )}
                   </div>
                 );
