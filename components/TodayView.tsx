@@ -68,9 +68,9 @@ function timerSegments(item: TodayItem): Segment[] | null {
   if (iv && iv.workSec > 0 && iv.rounds > 0) {
     const segs: Segment[] = [];
     for (let r = 1; r <= iv.rounds; r++) {
-      segs.push({ label: `${iv.workLabel ?? 'Work'} ${r}/${iv.rounds}`, sec: iv.workSec });
+      segs.push({ label: `${iv.workLabel ?? 'Work'} ${r}/${iv.rounds}`, sec: iv.workSec, tone: 'work' });
       if (iv.restSec > 0 && r < iv.rounds) {
-        segs.push({ label: `${iv.restLabel ?? 'Rest'} ${r}/${iv.rounds}`, sec: iv.restSec });
+        segs.push({ label: `${iv.restLabel ?? 'Rest'} ${r}/${iv.rounds}`, sec: iv.restSec, tone: 'rest' });
       }
     }
     return segs;
@@ -228,6 +228,7 @@ export default function TodayView() {
                     {segments !== null && !isDone && (
                       <ItemTimer
                         key={`${item.id}-${segments.length}-${segments[0].sec}`}
+                        name={item.name}
                         segments={segments}
                         color={c.main}
                         onComplete={() => markDone(item.id)}
