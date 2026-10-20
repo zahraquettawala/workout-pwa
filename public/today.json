@@ -45,7 +45,12 @@
       "label": "Jump rope finisher · 8 min",
       "color": "neutral",
       "items": [
-        { "id": "rope-intervals", "name": "30 sec fast / 30 sec easy", "detail": "8 rounds" }
+        {
+          "id": "rope-intervals",
+          "name": "30 sec fast / 30 sec easy",
+          "detail": "8 rounds",
+          "intervals": { "workSec": 30, "restSec": 30, "rounds": 8, "workLabel": "Fast", "restLabel": "Easy" }
+        }
       ]
     }
   ]

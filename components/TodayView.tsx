@@ -1,13 +1,21 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import ItemTimer from './ItemTimer';
+import ItemTimer, { type Segment } from './ItemTimer';
 
+type Intervals = {
+  workSec: number;
+  restSec: number;
+  rounds: number;
+  workLabel?: string;
+  restLabel?: string;
+};
 type TodayItem = {
   id: string;
   name: string;
   detail?: string;
   durationSec?: number;
+  intervals?: Intervals;
   timer?: boolean;
 };
 type TodaySection = {
@@ -50,6 +58,25 @@ function timerSeconds(item: TodayItem): number | null {
   const n = parseFloat(m[1]);
   const secs = Math.round(/^m/i.test(m[2]) ? n * 60 : n);
   return secs > 0 ? secs : null;
+}
+
+// Timer steps for an item. "intervals" runs work/rest rounds back to back
+// (e.g. 30 sec fast / 30 sec easy x 8); otherwise a single countdown.
+function timerSegments(item: TodayItem): Segment[] | null {
+  if (item.timer === false) return null;
+  const iv = item.intervals;
+  if (iv && iv.workSec > 0 && iv.rounds > 0) {
+    const segs: Segment[] = [];
+    for (let r = 1; r <= iv.rounds; r++) {
+      segs.push({ label: `${iv.workLabel ?? 'Work'} ${r}/${iv.rounds}`, sec: iv.workSec });
+      if (iv.restSec > 0 && r < iv.rounds) {
+        segs.push({ label: `${iv.restLabel ?? 'Rest'} ${r}/${iv.rounds}`, sec: iv.restSec });
+      }
+    }
+    return segs;
+  }
+  const secs = timerSeconds(item);
+  return secs ? [{ sec: secs }] : null;
 }
 
 export default function TodayView() {
@@ -170,7 +197,7 @@ export default function TodayView() {
             <div className="px-4">
               {section.items.map((item, i) => {
                 const isDone = done.includes(item.id);
-                const secs = timerSeconds(item);
+                const segments = timerSegments(item);
                 return (
                   <div
                     key={item.id}
@@ -198,10 +225,10 @@ export default function TodayView() {
                         <span className="text-xs shrink-0" style={{ color: c.main }}>{item.detail}</span>
                       )}
                     </button>
-                    {secs !== null && !isDone && (
+                    {segments !== null && !isDone && (
                       <ItemTimer
-                        key={`${item.id}-${secs}`}
-                        durationSec={secs}
+                        key={`${item.id}-${segments.length}-${segments[0].sec}`}
+                        segments={segments}
                         color={c.main}
                         onComplete={() => markDone(item.id)}
                       />

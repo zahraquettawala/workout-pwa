@@ -2,55 +2,72 @@
 
 import { useEffect, useRef, useState } from 'react';
 
+export type Segment = { label?: string; sec: number };
+
 type ItemTimerProps = {
-  durationSec: number;
+  segments: Segment[];
   color: string;
   onComplete: () => void;
 };
 
-export default function ItemTimer({ durationSec, color, onComplete }: ItemTimerProps) {
-  const [left, setLeft] = useState(durationSec);
+export default function ItemTimer({ segments, color, onComplete }: ItemTimerProps) {
+  const [idx, setIdx] = useState(0);
+  const [left, setLeft] = useState(segments[0].sec);
   const [running, setRunning] = useState(false);
   const completeRef = useRef(onComplete);
+  const segRef = useRef(segments);
 
   useEffect(() => {
     completeRef.current = onComplete;
+    segRef.current = segments;
   });
+
+  const seg = segments[idx];
+  const isLast = idx === segments.length - 1;
 
   useEffect(() => {
     if (!running) return;
     if (left <= 0) {
-      setRunning(false);
       try {
         navigator.vibrate?.([200, 100, 200]);
       } catch {}
-      completeRef.current();
+      if (!isLast) {
+        setIdx(idx + 1);
+        setLeft(segRef.current[idx + 1].sec);
+      } else {
+        setRunning(false);
+        completeRef.current();
+      }
       return;
     }
     const id = setTimeout(() => setLeft((s) => s - 1), 1000);
     return () => clearTimeout(id);
-  }, [running, left]);
+  }, [running, left, idx, isLast]);
+
+  const reset = () => {
+    setRunning(false);
+    setIdx(0);
+    setLeft(segments[0].sec);
+  };
 
   const toggle = () => {
     if (running) {
       setRunning(false);
       return;
     }
-    if (left <= 0) setLeft(durationSec);
+    if (isLast && left <= 0) {
+      setIdx(0);
+      setLeft(segments[0].sec);
+    }
     setRunning(true);
-  };
-
-  const reset = () => {
-    setRunning(false);
-    setLeft(durationSec);
   };
 
   const mins = Math.floor(left / 60);
   const secs = left % 60;
-  const progress = durationSec > 0 ? left / durationSec : 1;
+  const progress = seg.sec > 0 ? left / seg.sec : 1;
   const r = 5;
   const circ = 2 * Math.PI * r;
-  const started = left !== durationSec;
+  const started = idx > 0 || left !== segments[0].sec;
 
   return (
     <div className="shrink-0 flex items-center gap-1.5">
@@ -87,6 +104,7 @@ export default function ItemTimer({ durationSec, color, onComplete }: ItemTimerP
             strokeLinecap="round"
           />
         </svg>
+        {seg.label && <span className="text-xs font-medium">{seg.label}</span>}
         {`${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`}
       </button>
     </div>
