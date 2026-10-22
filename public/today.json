@@ -1,56 +1,44 @@
 {
-  "date": "2026-10-20",
-  "title": "Tuesday home workout",
-  "subtitle": "~38 min · all indoors · jump rope is the cardio",
-  "feeling": "Dark out, at home, want something different from yesterday's squat/push-up/row/run day.",
-  "note": "Different moves from yesterday: single-leg and side-to-side legs, shoulders and arms instead of chest and back, jump rope intervals instead of the run. Lower slowly (3 sec) on every lift. Backyard in the dark: porch light on, flattest spot, swap skaters for high knees if footing feels off.",
+  "date": "2026-10-22",
+  "title": "Thursday quick workout",
+  "subtitle": "~25 min · full body · dumbbells + jump rope",
+  "feeling": "Feeling gross after a 4-mile run and a stretch of heavy eating, and short on time this morning.",
+  "note": "This one is about feeling strong and moving, not making up for food. Go steady, lower slowly (3 sec), and stop each set with 2 good reps left.",
   "sections": [
     {
-      "label": "Warm-up · 4 min",
+      "label": "Warm-up",
       "color": "sage",
       "items": [
-        { "id": "warm-rope", "name": "Easy jump rope", "detail": "2 min" },
-        { "id": "warm-mobility", "name": "Glute bridges + arm circles", "detail": "2 min" }
+        { "id": "warm-rope", "name": "Easy jump rope or march in place", "detail": "2 min" }
       ]
     },
     {
-      "label": "Circuit A · 3 rounds · rest 60 sec",
+      "label": "Circuit · 3 rounds · rest 45 sec",
       "color": "accent",
       "items": [
-        { "id": "rev-lunge", "name": "Reverse lunge (15 lb each hand)", "detail": "10 / leg" },
-        { "id": "shoulder-press", "name": "Standing DB shoulder press (15s)", "detail": "10" },
-        { "id": "lateral-walk", "name": "Banded lateral walk", "detail": "12 steps each way" },
-        { "id": "reverse-fly", "name": "Bent-over reverse fly (5-10 lb)", "detail": "12" }
+        { "id": "floor-press", "name": "DB floor press (15-20 lb)", "detail": "12" },
+        { "id": "one-arm-row", "name": "Single-arm DB row (20 lb)", "detail": "10 / arm" },
+        { "id": "sumo-squat", "name": "Sumo squat (two 20s, slow down)", "detail": "12" },
+        { "id": "plank-taps", "name": "Plank shoulder taps", "detail": "20 total" }
       ]
     },
     {
-      "label": "Circuit B · 3 rounds · rest 60 sec",
-      "color": "accent",
-      "items": [
-        { "id": "sl-bridge", "name": "Single-leg glute bridge", "detail": "10 / leg" },
-        { "id": "curl", "name": "DB curl (10-15 lb)", "detail": "12" },
-        { "id": "oh-triceps", "name": "Overhead triceps extension (15 lb)", "detail": "12" },
-        { "id": "skaters", "name": "Skater hops", "detail": "20 total" }
-      ]
-    },
-    {
-      "label": "Core · 2 rounds",
+      "label": "Finisher",
       "color": "mauve",
       "items": [
-        { "id": "dead-bug", "name": "Dead bug", "detail": "10 / side" },
-        { "id": "side-plank", "name": "Side plank", "detail": "30 sec / side" }
+        {
+          "id": "rope-finisher",
+          "name": "Jump rope: fast / easy",
+          "detail": "4 rounds",
+          "intervals": { "workSec": 30, "restSec": 30, "rounds": 4, "workLabel": "Fast", "restLabel": "Easy" }
+        }
       ]
     },
     {
-      "label": "Jump rope finisher · 8 min",
+      "label": "Cooldown",
       "color": "neutral",
       "items": [
-        {
-          "id": "rope-intervals",
-          "name": "30 sec fast / 30 sec easy",
-          "detail": "8 rounds",
-          "intervals": { "workSec": 30, "restSec": 30, "rounds": 8, "workLabel": "Fast", "restLabel": "Easy" }
-        }
+        { "id": "cool-stretch", "name": "Hips, hamstrings, chest stretch", "detail": "2 min" }
       ]
     }
   ]
