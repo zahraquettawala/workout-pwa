@@ -1,67 +1,41 @@
 {
-  "date": "2026-10-22",
-  "title": "Thursday quick workout",
-  "subtitle": "~35 min \u00b7 weights + an easy walk",
-  "feeling": "Feeling gross after a 4-mile run and a stretch of heavy eating, and short on time this morning.",
-  "note": "This one is about feeling strong and moving, not making up for food. Go steady, lower slowly (3 sec), and stop each set with 2 good reps left.",
+  "date": "2026-10-23",
+  "title": "Friday easy workout",
+  "subtitle": "~30 min · home · light, tired-day friendly",
+  "feeling": "Tired today after a full workout yesterday, and I need to be at the office by 9.",
+  "note": "Easy day: steady pace, stop each set with about 3 reps left, and lower slowly (3 sec). Finishing the walk counts as a win.",
   "sections": [
     {
       "label": "Warm-up",
       "color": "sage",
       "items": [
-        {
-          "id": "warm-rope",
-          "name": "Easy march in place or light jump rope",
-          "detail": "2 min"
-        }
+        { "id": "warm-walk", "name": "Easy march in place or walk", "detail": "3 min" },
+        { "id": "warm-mobility", "name": "Leg swings + arm circles", "detail": "1 min" }
       ]
     },
     {
-      "label": "Circuit \u00b7 3 rounds \u00b7 rest 45 sec",
+      "label": "Circuit · 2 rounds · rest 45 sec",
       "color": "accent",
       "items": [
-        {
-          "id": "floor-press",
-          "name": "DB floor press (15-20 lb)",
-          "detail": "12"
-        },
-        {
-          "id": "one-arm-row",
-          "name": "Single-arm DB row (20 lb)",
-          "detail": "10 / arm"
-        },
-        {
-          "id": "sumo-squat",
-          "name": "Sumo squat (two 20s, slow down)",
-          "detail": "12"
-        },
-        {
-          "id": "plank-taps",
-          "name": "Plank shoulder taps",
-          "detail": "20 total"
-        }
+        { "id": "rev-lunge", "name": "Reverse lunge (10-15 lb each hand)", "detail": "10 / leg" },
+        { "id": "rdl", "name": "DB Romanian deadlift (two 20s)", "detail": "12" },
+        { "id": "shoulder-press", "name": "Standing DB shoulder press (10-15 lb)", "detail": "10" },
+        { "id": "lateral-walk", "name": "Banded lateral walk", "detail": "12 steps each way" }
+      ]
+    },
+    {
+      "label": "Core · 2 rounds",
+      "color": "mauve",
+      "items": [
+        { "id": "bird-dog", "name": "Bird dog", "detail": "10 / side" },
+        { "id": "forearm-plank", "name": "Forearm plank", "detail": "40 sec" }
       ]
     },
     {
       "label": "Walk",
-      "color": "mauve",
-      "items": [
-        {
-          "id": "easy-walk",
-          "name": "Easy walk, relaxed pace",
-          "detail": "15 min"
-        }
-      ]
-    },
-    {
-      "label": "Cooldown",
       "color": "neutral",
       "items": [
-        {
-          "id": "cool-stretch",
-          "name": "Hips, hamstrings, chest stretch",
-          "detail": "2 min"
-        }
+        { "id": "easy-walk", "name": "Easy walk, relaxed pace", "detail": "12 min" }
       ]
     }
   ]
