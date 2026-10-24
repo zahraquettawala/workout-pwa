@@ -1,3 +1,13 @@
+# Betterment Shredded
+
+**[Open the app](https://workout-pwa-nine.vercel.app/)**: https://workout-pwa-nine.vercel.app/
+
+Install it on your phone: open the link in Safari (iPhone) or Chrome (Android), then Share > Add to Home Screen.
+
+The **Today** tab loads `public/today.json`, so a push to `main` updates the day's workout after Vercel redeploys.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
