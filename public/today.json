@@ -1,9 +1,9 @@
 {
   "date": "2026-10-24",
   "title": "Saturday strength + 12-3-30",
-  "subtitle": "~60 min \u00b7 Lifetime \u00b7 12-3-30 first, then upper body + quads, no jumping",
+  "subtitle": "~60 min \u00b7 Lifetime Reston \u00b7 12-3-30 first, then everything at ONE bench",
   "feeling": "Rested after a light week. Hamstring feels a little off (not painful). Want a real workout, then I need to study.",
-  "note": "Machines only, all in one zone. Rest about 60 sec between supersets and finish each set with 2 reps left. Skip anything that tugs the hamstring. On the incline, drop to 8-10% if the back of the leg complains.",
+  "note": "Grab one bench plus a few dumbbell pairs and don't move. Rest about 60 sec between supersets and finish each set with 2 reps left. Skip anything that tugs the hamstring. On the incline, drop to 8-10% if the back of the leg complains.",
   "sections": [
     {
       "label": "Cardio first \u00b7 listen to your interview prep",
@@ -33,49 +33,49 @@
       ]
     },
     {
-      "label": "Superset A \u00b7 3 rounds",
+      "label": "Superset A \u00b7 3 rounds \u00b7 one bench",
       "color": "accent",
       "items": [
         {
-          "id": "chest-press",
-          "name": "Machine chest press",
+          "id": "db-chest-press",
+          "name": "DB bench press (15-20 lb each)",
           "detail": "3 x 10"
         },
         {
-          "id": "seated-row",
-          "name": "Seated cable row",
-          "detail": "3 x 10"
+          "id": "db-row",
+          "name": "One-arm DB row, hand on the bench",
+          "detail": "3 x 10 / side"
         }
       ]
     },
     {
-      "label": "Superset B \u00b7 3 rounds",
+      "label": "Superset B \u00b7 3 rounds \u00b7 same bench",
       "color": "mauve",
       "items": [
         {
-          "id": "shoulder-press-m",
-          "name": "Machine shoulder press",
+          "id": "db-shoulder-press",
+          "name": "Seated DB shoulder press (10-15 lb each)",
           "detail": "3 x 10"
         },
         {
-          "id": "lat-pulldown",
-          "name": "Lat pulldown",
-          "detail": "3 x 10"
+          "id": "db-rear-fly",
+          "name": "DB rear delt fly, chest on incline bench (5-10 lb)",
+          "detail": "3 x 12"
         }
       ]
     },
     {
-      "label": "Finisher \u00b7 3 rounds",
+      "label": "Finisher \u00b7 3 rounds \u00b7 same spot",
       "color": "accent",
       "items": [
         {
-          "id": "leg-ext",
-          "name": "Leg extension (light, no hamstring pull)",
+          "id": "goblet-sit",
+          "name": "Goblet squat to the bench (light, controlled)",
           "detail": "3 x 12"
         },
         {
-          "id": "tri-pushdown",
-          "name": "Cable triceps pushdown",
+          "id": "db-tri-ext",
+          "name": "DB overhead triceps extension",
           "detail": "3 x 12"
         },
         {
