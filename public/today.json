@@ -1,19 +1,30 @@
 {
   "date": "2026-10-24",
   "title": "Saturday strength + 12-3-30",
-  "subtitle": "~60 min \u00b7 Lifetime \u00b7 upper body + quads, hamstring-friendly, no jumping",
+  "subtitle": "~60 min \u00b7 Lifetime \u00b7 12-3-30 first, then upper body + quads, no jumping",
   "feeling": "Rested after a light week. Hamstring feels a little off (not painful). Want a real workout, then I need to study.",
   "note": "Machines only, all in one zone. Rest about 60 sec between supersets and finish each set with 2 reps left. Skip anything that tugs the hamstring. On the incline, drop to 8-10% if the back of the leg complains.",
   "sections": [
     {
-      "label": "Warm-up",
+      "label": "Cardio first \u00b7 listen to your interview prep",
       "color": "sage",
       "items": [
         {
-          "id": "warm-tread",
-          "name": "Easy treadmill walk, incline 3",
-          "detail": "5 min"
+          "id": "tread-ramp",
+          "name": "Ramp up: incline 3, easy pace (warms the hamstring)",
+          "detail": "3 min"
         },
+        {
+          "id": "tread-12-3-30",
+          "name": "12-3-30: 12% incline, 3 mph (ease to 8-10% if hamstring objects)",
+          "detail": "30 min"
+        }
+      ]
+    },
+    {
+      "label": "Warm-up (arms)",
+      "color": "sage",
+      "items": [
         {
           "id": "warm-arms",
           "name": "Arm circles + band pull-aparts",
@@ -71,17 +82,6 @@
           "id": "plank",
           "name": "Forearm plank",
           "detail": "40 sec"
-        }
-      ]
-    },
-    {
-      "label": "Cardio \u00b7 listen to your interview prep",
-      "color": "sage",
-      "items": [
-        {
-          "id": "tread-12-3-30",
-          "name": "12-3-30: 12% incline, 3 mph (ease to 8-10% if hamstring objects)",
-          "detail": "30 min"
         }
       ]
     },
