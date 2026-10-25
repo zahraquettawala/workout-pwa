@@ -8,6 +8,8 @@ type ItemTimerProps = {
   segments: Segment[];
   color: string;
   onComplete: () => void;
+  // Saves the timer so it survives the app being backgrounded, locked or reloaded.
+  storageKey?: string;
 };
 
 let audioCtx: AudioContext | null = null;
@@ -44,44 +46,121 @@ function fmt(total: number): string {
   return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
 }
 
-export default function ItemTimer({ segments, color, onComplete }: ItemTimerProps) {
-  const [idx, setIdx] = useState(0);
-  const [left, setLeft] = useState(segments[0].sec);
-  const [running, setRunning] = useState(false);
+type Saved = { acc: number; startedAt: number | null };
+
+function load(key?: string): Saved {
+  if (!key) return { acc: 0, startedAt: null };
+  try {
+    const raw = localStorage.getItem(key);
+    if (raw) {
+      const v = JSON.parse(raw) as Saved;
+      if (typeof v.acc === 'number') return { acc: v.acc, startedAt: typeof v.startedAt === 'number' ? v.startedAt : null };
+    }
+  } catch {}
+  return { acc: 0, startedAt: null };
+}
+
+function save(key: string | undefined, v: Saved | null) {
+  if (!key) return;
+  try {
+    if (v) localStorage.setItem(key, JSON.stringify(v));
+    else localStorage.removeItem(key);
+  } catch {}
+}
+
+// Where are we, given total elapsed seconds? Time is always measured from the
+// clock (not by counting ticks), so it stays right when the app is in the
+// background, the phone is locked, or the browser pauses timers.
+function locate(segments: Segment[], elapsedSec: number) {
+  let start = 0;
+  for (let i = 0; i < segments.length; i++) {
+    const end = start + segments[i].sec;
+    if (elapsedSec < end) return { idx: i, remaining: end - elapsedSec };
+    start = end;
+  }
+  const last = segments.length - 1;
+  return { idx: last, remaining: 0 };
+}
+
+export default function ItemTimer({ segments, color, onComplete, storageKey }: ItemTimerProps) {
+  const [saved, setSaved] = useState<Saved>(() => load(storageKey));
+  const [now, setNow] = useState(() => Date.now());
   const [finished, setFinished] = useState(false);
+  const [visTick, setVisTick] = useState(0);
   const completeRef = useRef(onComplete);
-  const segRef = useRef(segments);
+  const lastIdxRef = useRef<number | null>(null);
+  const lastBeepRef = useRef('');
 
   useEffect(() => {
     completeRef.current = onComplete;
-    segRef.current = segments;
   });
 
+  const totalSec = segments.reduce((a, s) => a + s.sec, 0);
+  const running = saved.startedAt !== null && !finished;
+  const elapsedMs = saved.acc + (saved.startedAt !== null ? Math.max(0, now - saved.startedAt) : 0);
+  const elapsedSec = Math.min(totalSec, elapsedMs / 1000);
+  const { idx, remaining } = finished ? { idx: segments.length - 1, remaining: 0 } : locate(segments, elapsedSec);
   const seg = segments[idx];
-  const isLast = idx === segments.length - 1;
+  const left = Math.ceil(remaining - 1e-6);
 
-  // Count down, move between steps, and finish.
+  // Tick while running, and catch up the moment the app comes back to the screen.
   useEffect(() => {
     if (!running) return;
-    if (left <= 0) {
+    const id = setInterval(() => setNow(Date.now()), 250);
+    const onVis = () => {
+      setNow(Date.now());
+      setVisTick((t) => t + 1);
+    };
+    document.addEventListener('visibilitychange', onVis);
+    window.addEventListener('focus', onVis);
+    window.addEventListener('pageshow', onVis);
+    return () => {
+      clearInterval(id);
+      document.removeEventListener('visibilitychange', onVis);
+      window.removeEventListener('focus', onVis);
+      window.removeEventListener('pageshow', onVis);
+    };
+  }, [running]);
+
+  // Cues: beep at step changes and the last 3 seconds (only while the app is visible).
+  useEffect(() => {
+    if (!running) {
+      lastIdxRef.current = null;
+      return;
+    }
+    const visible = document.visibilityState === 'visible';
+    if (lastIdxRef.current !== null && idx !== lastIdxRef.current && visible) {
+      beep(988, 300);
       try {
         navigator.vibrate?.([200, 100, 200]);
       } catch {}
-      if (!isLast) {
-        beep(988, 300);
-        setIdx(idx + 1);
-        setLeft(segRef.current[idx + 1].sec);
-      } else {
-        beep(988, 700);
-        setRunning(false);
-        setFinished(true);
-      }
-      return;
     }
-    if (left <= 3) beep(660, 90);
-    const id = setTimeout(() => setLeft((s) => s - 1), 1000);
-    return () => clearTimeout(id);
-  }, [running, left, idx, isLast]);
+    lastIdxRef.current = idx;
+    if (left > 0 && left <= 3 && visible) {
+      const k = `${idx}-${left}`;
+      if (lastBeepRef.current !== k) {
+        lastBeepRef.current = k;
+        beep(660, 90);
+      }
+    }
+  }, [running, idx, left]);
+
+  // Finish when the clock passes the total.
+  useEffect(() => {
+    if (!running || elapsedMs < totalSec * 1000) return;
+    setFinished(true);
+    setSaved({ acc: totalSec * 1000, startedAt: null });
+    save(storageKey, { acc: totalSec * 1000, startedAt: null });
+    if (document.visibilityState === 'visible') beep(988, 700);
+    try {
+      navigator.vibrate?.([200, 100, 200]);
+    } catch {}
+  }, [running, elapsedMs, totalSec, storageKey]);
+
+  // A timer that was already complete when reopened.
+  useEffect(() => {
+    if (!finished && saved.startedAt === null && saved.acc >= totalSec * 1000 && totalSec > 0) setFinished(true);
+  }, [finished, saved, totalSec]);
 
   // After "Done" shows for a moment, check the item off.
   useEffect(() => {
@@ -90,7 +169,7 @@ export default function ItemTimer({ segments, color, onComplete }: ItemTimerProp
     return () => clearTimeout(id);
   }, [finished]);
 
-  // Keep the screen awake while the timer is running.
+  // Keep the screen awake while the timer is running (re-requested when the app returns).
   useEffect(() => {
     if (!running) return;
     const holder: { lock: WakeLockSentinel | null } = { lock: null };
@@ -106,22 +185,32 @@ export default function ItemTimer({ segments, color, onComplete }: ItemTimerProp
       cancelled = true;
       holder.lock?.release().catch(() => {});
     };
-  }, [running]);
+  }, [running, visTick]);
 
   const reset = () => {
-    setRunning(false);
     setFinished(false);
-    setIdx(0);
-    setLeft(segments[0].sec);
+    setSaved({ acc: 0, startedAt: null });
+    save(storageKey, null);
+    lastIdxRef.current = null;
   };
 
   const startOrPause = () => {
     ensureAudio();
-    setRunning((r) => !r);
+    const t = Date.now();
+    setNow(t);
+    if (saved.startedAt !== null) {
+      const next = { acc: saved.acc + Math.max(0, t - saved.startedAt), startedAt: null };
+      setSaved(next);
+      save(storageKey, next);
+    } else {
+      const next = { acc: saved.acc, startedAt: t };
+      setSaved(next);
+      save(storageKey, next);
+    }
   };
 
-  const started = idx > 0 || left !== segments[0].sec;
-  const progress = seg.sec > 0 ? left / seg.sec : 1;
+  const started = saved.acc > 0 || saved.startedAt !== null;
+  const progress = seg.sec > 0 ? Math.max(0, remaining) / seg.sec : 1;
 
   const tinted = finished || seg.tone !== undefined;
   const bg = finished || seg.tone === 'rest' ? 'var(--sage)' : seg.tone === 'work' ? 'var(--accent)' : 'var(--surface)';
@@ -152,7 +241,7 @@ export default function ItemTimer({ segments, color, onComplete }: ItemTimerProp
           style={{
             width: `${Math.max(0, Math.min(1, progress)) * 100}%`,
             background: barFg,
-            transition: 'width 1s linear',
+            transition: 'width 0.25s linear',
           }}
         />
       </div>

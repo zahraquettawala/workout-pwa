@@ -229,6 +229,7 @@ export default function TodayView() {
                         <ItemTimer
                           key={`${item.id}-${segments.length}-${segments[0].sec}`}
                           segments={segments}
+                          storageKey={`today_timer_${workout.date}_${item.id}`}
                           color={c.main}
                           onComplete={() => markDone(item.id)}
                         />
