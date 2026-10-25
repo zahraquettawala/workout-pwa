@@ -1,76 +1,86 @@
 {
-  "date": "2026-10-24",
-  "title": "Saturday strength + 12-3-30",
-  "subtitle": "~60 min \u00b7 Lifetime Reston \u00b7 12-3-30 first, then machines, one at a time",
-  "feeling": "Rested after a light week. Hamstring feels a little off (not painful). Want a real workout, then I need to study.",
-  "note": "No supersets: finish all 3 sets on one machine, then move to the next. Rest about 60-75 sec between sets and finish each set with 2 reps left. Skip anything that tugs the hamstring. On the incline, drop to 8-10% if the back of the leg complains.",
+  "date": "2026-10-25",
+  "title": "Sunday easy run + abs",
+  "subtitle": "~50 min \u00b7 home \u00b7 before breakfast, easy effort, no jumping",
+  "feeling": "Period coming, low motivation, lifted a lot yesterday. Hamstring a little off. Want a good workout, then start my day.",
+  "note": "Keep the run truly easy and conversational on flat ground. If you feel dizzy or crampy, switch to walking. That still counts. If the hamstring is tight, run 4 min and walk 1.",
   "sections": [
     {
-      "label": "Cardio first \u00b7 listen to your interview prep",
+      "label": "Warm-up",
       "color": "sage",
       "items": [
         {
-          "id": "tread-ramp",
-          "name": "Ramp up: incline 3, easy pace (warms the hamstring)",
-          "detail": "3 min"
+          "id": "warm-walk",
+          "name": "Brisk walk",
+          "detail": "5 min"
         },
         {
-          "id": "tread-12-3-30",
-          "name": "12-3-30: 12% incline, 3 mph (ease to 8-10% if hamstring objects)",
+          "id": "warm-swings",
+          "name": "Leg swings + bodyweight squats",
+          "detail": "1 min"
+        }
+      ]
+    },
+    {
+      "label": "Easy run",
+      "color": "accent",
+      "items": [
+        {
+          "id": "easy-run",
+          "name": "Easy run, conversational pace (walk breaks are fine)",
           "detail": "30 min"
         }
       ]
     },
     {
-      "label": "Push machines \u00b7 all sets here, then move on",
-      "color": "accent",
-      "items": [
-        {
-          "id": "chest-press",
-          "name": "Machine chest press",
-          "detail": "3 x 10"
-        },
-        {
-          "id": "shoulder-press-m",
-          "name": "Machine shoulder press",
-          "detail": "3 x 10"
-        }
-      ]
-    },
-    {
-      "label": "Pull machines \u00b7 lat pulldown and row sit close",
+      "label": "Legs \u00b7 2 rounds",
       "color": "mauve",
       "items": [
         {
-          "id": "lat-pulldown",
-          "name": "Lat pulldown",
-          "detail": "3 x 10"
+          "id": "goblet-squat",
+          "name": "Goblet squat (20 lb)",
+          "detail": "10"
         },
         {
-          "id": "seated-row",
-          "name": "Seated cable row",
-          "detail": "3 x 10"
-        },
-        {
-          "id": "tri-pushdown",
-          "name": "Cable triceps pushdown (at the nearest cable)",
-          "detail": "3 x 12"
+          "id": "band-bridge",
+          "name": "Banded glute bridge",
+          "detail": "12"
         }
       ]
     },
     {
-      "label": "Finish",
+      "label": "Abs \u00b7 2 rounds \u00b7 rest 15 sec between moves",
       "color": "accent",
       "items": [
         {
-          "id": "leg-ext",
-          "name": "Leg extension (light, no hamstring pull)",
-          "detail": "3 x 12"
+          "id": "bicycle",
+          "name": "Bicycle crunches, slow and twisty",
+          "detail": "40 sec"
         },
         {
-          "id": "plank",
-          "name": "Forearm plank (on the mat nearby)",
+          "id": "reverse-crunch",
+          "name": "Reverse crunch",
+          "detail": "12"
+        },
+        {
+          "id": "heel-taps",
+          "name": "Heel taps",
           "detail": "40 sec"
+        },
+        {
+          "id": "toe-taps",
+          "name": "Supine toe taps (tabletop legs)",
+          "detail": "12 / side"
+        },
+        {
+          "id": "russian-twist",
+          "name": "Russian twist with 10 lb",
+          "detail": "20 total"
+        },
+        {
+          "id": "flutter",
+          "name": "Flutter kicks, low back pressed down",
+          "detail": "30 sec"
         }
       ]
     },
@@ -79,9 +89,14 @@
       "color": "neutral",
       "items": [
         {
-          "id": "cool-stretch",
-          "name": "Quad, chest and lat stretch (skip deep hamstring stretching)",
+          "id": "cool-walk",
+          "name": "Easy walk",
           "detail": "3 min"
+        },
+        {
+          "id": "cool-stretch",
+          "name": "Quad and calf stretch (skip deep hamstring stretching)",
+          "detail": "2 min"
         }
       ]
     }
