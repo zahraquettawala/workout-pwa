@@ -1,101 +1,70 @@
 {
-  "date": "2026-10-25",
-  "title": "Sunday easy run + abs",
-  "subtitle": "~50 min \u00b7 home \u00b7 before breakfast, easy effort, no jumping",
-  "feeling": "Period coming, low motivation, lifted a lot yesterday. Hamstring a little off. Want a good workout, then start my day.",
-  "note": "Keep the run truly easy and conversational on flat ground. If you feel dizzy or crampy, switch to walking. That still counts. If the hamstring is tight, run 4 min and walk 1.",
+  "date": "2026-10-26",
+  "title": "Monday home strength + walk",
+  "subtitle": "~35 min \u00b7 home \u00b7 low impact, no jumping, walk outside once it's light",
+  "feeling": "Period starting, a little nervous today. Want a quick, solid workout before the day.",
+  "note": "Steady pace, stop each set with about 3 reps left, and lower slowly. Go slow on the Romanian deadlift. If flow or cramps pick up, do fewer rounds. That still counts. Walk outside after sunrise (around 7:20).",
   "sections": [
     {
       "label": "Warm-up",
       "color": "sage",
       "items": [
         {
-          "id": "warm-walk",
-          "name": "Brisk walk",
-          "detail": "5 min"
-        },
-        {
-          "id": "warm-swings",
-          "name": "Leg swings + bodyweight squats",
-          "detail": "1 min"
+          "id": "warm-march",
+          "name": "March in place, arm circles, leg swings",
+          "detail": "3 min"
         }
       ]
     },
     {
-      "label": "Easy run",
+      "label": "Circuit \u00b7 3 rounds \u00b7 rest 45 sec",
       "color": "accent",
       "items": [
         {
-          "id": "easy-run",
-          "name": "Easy run, conversational pace (walk breaks are fine)",
-          "detail": "30 min"
-        }
-      ]
-    },
-    {
-      "label": "Legs \u00b7 2 rounds",
-      "color": "mauve",
-      "items": [
+          "id": "floor-press",
+          "name": "DB floor press (15-20 lb each hand)",
+          "detail": "12"
+        },
         {
-          "id": "goblet-squat",
-          "name": "Goblet squat (20 lb)",
+          "id": "bent-row",
+          "name": "DB bent-over row (15-20 lb)",
+          "detail": "12"
+        },
+        {
+          "id": "shoulder-press",
+          "name": "Standing DB shoulder press (10-15 lb)",
           "detail": "10"
         },
         {
-          "id": "band-bridge",
-          "name": "Banded glute bridge",
+          "id": "rdl",
+          "name": "DB Romanian deadlift (two 20s), slow",
           "detail": "12"
+        },
+        {
+          "id": "lateral-walk",
+          "name": "Banded lateral walk",
+          "detail": "12 steps each way"
         }
       ]
     },
     {
-      "label": "Abs \u00b7 2 rounds \u00b7 rest 15 sec between moves",
-      "color": "accent",
-      "items": [
-        {
-          "id": "bicycle",
-          "name": "Bicycle crunches, slow and twisty",
-          "detail": "40 sec"
-        },
-        {
-          "id": "reverse-crunch",
-          "name": "Reverse crunch",
-          "detail": "12"
-        },
-        {
-          "id": "heel-taps",
-          "name": "Heel taps",
-          "detail": "40 sec"
-        },
-        {
-          "id": "toe-taps",
-          "name": "Supine toe taps (tabletop legs)",
-          "detail": "12 / side"
-        },
-        {
-          "id": "russian-twist",
-          "name": "Russian twist with 10 lb",
-          "detail": "20 total"
-        },
-        {
-          "id": "flutter",
-          "name": "Flutter kicks, low back pressed down",
-          "detail": "30 sec"
-        }
-      ]
-    },
-    {
-      "label": "Cool-down",
+      "label": "Walk outside",
       "color": "neutral",
       "items": [
         {
-          "id": "cool-walk",
-          "name": "Easy walk",
-          "detail": "3 min"
-        },
+          "id": "easy-walk",
+          "name": "Easy walk, bundled up, relaxed pace",
+          "detail": "10 min"
+        }
+      ]
+    },
+    {
+      "label": "Stretch",
+      "color": "mauve",
+      "items": [
         {
-          "id": "cool-stretch",
-          "name": "Quad and calf stretch (skip deep hamstring stretching)",
+          "id": "stretch",
+          "name": "Chest, quad and lat stretch",
           "detail": "2 min"
         }
       ]
