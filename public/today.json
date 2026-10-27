@@ -1,73 +1,52 @@
 {
-  "date": "2026-10-26",
-  "title": "Monday home strength + walk",
-  "subtitle": "~35 min \u00b7 home \u00b7 low impact, no jumping, walk outside once it's light",
-  "feeling": "Period starting, a little nervous today. Want a quick, solid workout before the day.",
-  "note": "Steady pace, stop each set with about 3 reps left, and lower slowly. Go slow on the Romanian deadlift. If flow or cramps pick up, do fewer rounds. That still counts. Walk outside after sunrise (around 7:20).",
+  "date": "2026-10-27",
+  "note": "Keep the resistance band above your knees for the whole circuit — leave it on between moves. Rest 30 seconds between rounds, or roll straight into the next round if you're feeling good.",
   "sections": [
     {
-      "label": "Warm-up",
       "color": "sage",
       "items": [
         {
-          "id": "warm-march",
-          "name": "March in place, arm circles, leg swings",
-          "detail": "3 min"
+          "detail": "15–20 min",
+          "id": "primer-jog-walk",
+          "intervals": {
+            "restLabel": "Walk",
+            "restSec": 60,
+            "rounds": 6,
+            "workLabel": "Easy jog",
+            "workSec": 120
+          },
+          "name": "Alternate 2 min easy jog / 1 min walk"
         }
-      ]
+      ],
+      "label": "Step 1 · Outdoor run/walk primer"
     },
     {
-      "label": "Circuit \u00b7 3 rounds \u00b7 rest 45 sec",
       "color": "accent",
       "items": [
         {
-          "id": "floor-press",
-          "name": "DB floor press (15-20 lb each hand)",
-          "detail": "12"
+          "detail": "2 min",
+          "id": "jump-rope",
+          "name": "Jump rope"
         },
         {
-          "id": "bent-row",
-          "name": "DB bent-over row (15-20 lb)",
-          "detail": "12"
+          "detail": "15",
+          "id": "banded-squats",
+          "name": "Banded squats (band above knees)"
         },
         {
-          "id": "shoulder-press",
-          "name": "Standing DB shoulder press (10-15 lb)",
-          "detail": "10"
+          "detail": "15",
+          "id": "banded-bridges",
+          "name": "Banded bridges (band above knees)"
         },
         {
-          "id": "rdl",
-          "name": "DB Romanian deadlift (two 20s), slow",
-          "detail": "12"
-        },
-        {
-          "id": "lateral-walk",
-          "name": "Banded lateral walk",
-          "detail": "12 steps each way"
+          "detail": "10–12",
+          "id": "push-ups",
+          "name": "Push-ups"
         }
-      ]
-    },
-    {
-      "label": "Walk outside",
-      "color": "neutral",
-      "items": [
-        {
-          "id": "easy-walk",
-          "name": "Easy walk, bundled up, relaxed pace",
-          "detail": "10 min"
-        }
-      ]
-    },
-    {
-      "label": "Stretch",
-      "color": "mauve",
-      "items": [
-        {
-          "id": "stretch",
-          "name": "Chest, quad and lat stretch",
-          "detail": "2 min"
-        }
-      ]
+      ],
+      "label": "Step 2 · Living room circuit · 4 rounds · rest 30 sec"
     }
-  ]
+  ],
+  "subtitle": "~40 min · outdoor primer + living room · band stays on the whole circuit",
+  "title": "Tuesday run/walk primer + living room circuit"
 }
