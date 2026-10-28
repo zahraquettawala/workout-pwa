@@ -1,24 +1,24 @@
 {
-  "date": "2026-10-27",
-  "note": "Keep the resistance band above your knees for the whole circuit — leave it on between moves. Rest 30 seconds between rounds, or roll straight into the next round if you're feeling good.",
+  "date": "2026-10-28",
+  "note": "Today's all engine — keep the jog truly easy and conversational so you can hold the full 3 minutes, and walk the recoveries. In the circuit, move straight from one move to the next and take your 30 seconds between rounds.",
   "sections": [
     {
       "color": "sage",
       "items": [
         {
-          "detail": "15–20 min",
-          "id": "primer-jog-walk",
+          "detail": "20 min",
+          "id": "run-intervals",
           "intervals": {
             "restLabel": "Walk",
             "restSec": 60,
-            "rounds": 6,
+            "rounds": 5,
             "workLabel": "Easy jog",
-            "workSec": 120
+            "workSec": 180
           },
-          "name": "Alternate 2 min easy jog / 1 min walk"
+          "name": "Alternate 3 min easy jog / 1 min walk"
         }
       ],
-      "label": "Step 1 · Outdoor run/walk primer"
+      "label": "Step 1 · Outdoor run intervals"
     },
     {
       "color": "accent",
@@ -29,24 +29,24 @@
           "name": "Jump rope"
         },
         {
-          "detail": "15",
-          "id": "banded-squats",
-          "name": "Banded squats (band above knees)"
+          "detail": "40",
+          "id": "mountain-climbers",
+          "name": "Mountain climbers"
         },
         {
-          "detail": "15",
-          "id": "banded-bridges",
-          "name": "Banded bridges (band above knees)"
+          "detail": "30 sec",
+          "id": "high-knees",
+          "name": "High knees"
         },
         {
-          "detail": "10–12",
-          "id": "push-ups",
-          "name": "Push-ups"
+          "detail": "10",
+          "id": "burpees",
+          "name": "Burpees"
         }
       ],
-      "label": "Step 2 · Living room circuit · 4 rounds · rest 30 sec"
+      "label": "Step 2 · Cardio circuit · 4 rounds · rest 30 sec"
     }
   ],
-  "subtitle": "~40 min · outdoor primer + living room · band stays on the whole circuit",
-  "title": "Tuesday run/walk primer + living room circuit"
+  "subtitle": "~40 min · outdoor run + living room · cardio-heavy, triathlon run training",
+  "title": "Wednesday run intervals + cardio circuit"
 }
