@@ -1,76 +1,114 @@
 {
   "date": "2026-10-31",
-  "title": "Saturday strength + sweat finisher",
-  "subtitle": "~45 min \u00b7 home \u00b7 heavy-feeling tempo work, no jumping",
+  "title": "Saturday run + strength",
+  "subtitle": "~45 min \u00b7 run first, then strength at home \u00b7 no jumping",
   "feeling": "A few easy days, fresh and ready to work hard. Want to sweat and get stronger.",
-  "note": "Pick weights where the last 2 reps of every set are hard. Lower slowly (3-4 sec) on the tempo moves. Rest only as long as listed. Skip the single-leg deadlift if the hamstring tugs.",
+  "note": "Run first to get the sweat going, then two strength blocks. 'lb' means pounds per dumbbell. Pick a weight where the last 2 reps are hard. Skip the one-leg deadlift if your hamstring tugs.",
   "sections": [
     {
-      "label": "Warm-up",
+      "label": "1 \u00b7 Cardio blast \u00b7 10 min run",
       "color": "sage",
       "items": [
         {
-          "id": "warm-up",
-          "name": "March, hip circles, bodyweight squats, band pull-aparts",
-          "detail": "4 min"
+          "id": "run-easy",
+          "name": "Easy jog",
+          "detail": "3 min",
+          "cue": "Conversational pace. Just warming up."
+        },
+        {
+          "id": "run-fast",
+          "name": "Fast / easy intervals",
+          "detail": "4 rounds",
+          "cue": "Fast = breathing hard, can only say a few words. Easy = jog slow and recover.",
+          "intervals": {
+            "workSec": 60,
+            "restSec": 60,
+            "rounds": 4,
+            "workLabel": "Fast",
+            "restLabel": "Easy"
+          }
         }
-      ]
+      ],
+      "instructions": "Outside. 3 min easy, then 4 rounds of 1 min fast and 1 min easy."
     },
     {
-      "label": "Block A \u00b7 3 rounds \u00b7 rest 45 sec",
+      "label": "2 \u00b7 Warm-up \u00b7 indoors",
+      "color": "neutral",
+      "items": [
+        {
+          "id": "warm-up",
+          "name": "March, hip circles, bodyweight squats",
+          "detail": "3 min",
+          "cue": "Get your hips and legs loose before the weights."
+        }
+      ],
+      "instructions": "Grab your dumbbells, a chair and a couch."
+    },
+    {
+      "label": "3 \u00b7 Block A \u00b7 3 rounds",
       "color": "accent",
       "items": [
         {
           "id": "split-squat",
-          "name": "Bulgarian split squat, back foot on chair (two 20s)",
-          "detail": "10 / leg"
+          "name": "Bulgarian split squat",
+          "detail": "10 each leg",
+          "cue": "Back foot up on a chair. Hold a 20 lb dumbbell in each hand. Lower your back knee toward the floor, then stand up."
         },
         {
           "id": "tempo-pushup",
-          "name": "Tempo push-up, 3 sec down (knees if needed)",
-          "detail": "10"
+          "name": "Slow push-up",
+          "detail": "10",
+          "cue": "Take 3 seconds to lower your chest to the floor. Knees down is fine."
         },
         {
           "id": "one-arm-row",
-          "name": "One-arm DB row (20 lb)",
-          "detail": "12 / side"
+          "name": "One-arm row",
+          "detail": "12 each side",
+          "cue": "One 20 lb dumbbell. Free hand on a chair or couch. Pull your elbow back to your hip."
         },
         {
           "id": "hip-thrust",
-          "name": "DB hip thrust, upper back on couch (20 lb)",
-          "detail": "15"
+          "name": "Hip thrust",
+          "detail": "15",
+          "cue": "Upper back on the couch, one 20 lb dumbbell on your hips. Squeeze your glutes at the top."
         }
-      ]
+      ],
+      "instructions": "Do all 4 moves in a row. Rest 45 seconds. Repeat 3 times."
     },
     {
-      "label": "Block B \u00b7 3 rounds \u00b7 rest 30 sec",
+      "label": "4 \u00b7 Block B \u00b7 3 rounds",
       "color": "mauve",
       "items": [
         {
           "id": "sl-rdl",
-          "name": "Single-leg Romanian deadlift (20 lb), slow",
-          "detail": "8 / leg"
+          "name": "One-leg deadlift",
+          "detail": "8 each leg",
+          "cue": "One 20 lb dumbbell. Hinge forward on one leg while the other leg lifts behind you. Go slow."
         },
         {
           "id": "shoulder-press",
-          "name": "Standing DB shoulder press (15 lb each)",
-          "detail": "10"
+          "name": "Shoulder press",
+          "detail": "10",
+          "cue": "A 15 lb dumbbell in each hand. Press straight overhead."
         },
         {
           "id": "tempo-goblet",
-          "name": "Tempo goblet squat (20 lb), 4 sec down, pause at bottom",
-          "detail": "10"
+          "name": "Slow goblet squat",
+          "detail": "10",
+          "cue": "One 20 lb dumbbell held at your chest. Take 4 seconds to lower, pause 1 second at the bottom, then stand."
         }
-      ]
+      ],
+      "instructions": "Do all 3 moves in a row. Rest 30 seconds. Repeat 3 times."
     },
     {
-      "label": "Sweat finisher \u00b7 no jumping",
+      "label": "5 \u00b7 Sweat finisher",
       "color": "accent",
       "items": [
         {
           "id": "thrusters",
-          "name": "DB thruster (two 15s)",
-          "detail": "4 x 40 sec",
+          "name": "Dumbbell thruster",
+          "detail": "4 rounds",
+          "cue": "Two 15 lb dumbbells at your shoulders. Squat down, then stand and press overhead in one smooth motion.",
           "intervals": {
             "workSec": 40,
             "restSec": 20,
@@ -78,50 +116,44 @@
             "workLabel": "Thrusters",
             "restLabel": "Rest"
           }
-        },
-        {
-          "id": "mtn-climbers",
-          "name": "Mountain climbers",
-          "detail": "4 x 30 sec",
-          "intervals": {
-            "workSec": 30,
-            "restSec": 20,
-            "rounds": 4,
-            "workLabel": "Climbers",
-            "restLabel": "Rest"
-          }
         }
-      ]
+      ],
+      "instructions": "40 seconds hard, 20 seconds rest, 4 times. No jumping."
     },
     {
-      "label": "Core \u00b7 2 rounds",
+      "label": "6 \u00b7 Core \u00b7 2 rounds",
       "color": "mauve",
       "items": [
         {
           "id": "reverse-crunch",
           "name": "Reverse crunch",
-          "detail": "12"
+          "detail": "12",
+          "cue": "Lie on your back. Bring your knees to your chest and lift your hips a little. Lower slowly."
         },
         {
           "id": "russian-twist",
-          "name": "Russian twist with 10 lb",
-          "detail": "20 total"
+          "name": "Russian twist",
+          "detail": "20 total",
+          "cue": "Sit leaning back slightly, holding a 10 lb dumbbell. Turn side to side."
         },
         {
           "id": "toe-taps",
-          "name": "Supine toe taps (tabletop legs)",
-          "detail": "12 / side"
+          "name": "Toe taps",
+          "detail": "12 each side",
+          "cue": "On your back, legs bent at 90 degrees. Lower one foot to tap the floor, then switch."
         }
-      ]
+      ],
+      "instructions": "Do all 3 moves in a row. Repeat 2 times."
     },
     {
-      "label": "Cool-down",
+      "label": "7 \u00b7 Cool-down",
       "color": "neutral",
       "items": [
         {
           "id": "cool-walk",
-          "name": "Easy walk, then quad, chest and glute stretch",
-          "detail": "3 min"
+          "name": "Easy walk and stretch",
+          "detail": "3 min",
+          "cue": "Walk slowly, then stretch quads, chest and glutes."
         }
       ]
     }

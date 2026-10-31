@@ -14,12 +14,14 @@ type TodayItem = {
   id: string;
   name: string;
   detail?: string;
+  cue?: string;
   durationSec?: number;
   intervals?: Intervals;
   timer?: boolean;
 };
 type TodaySection = {
   label: string;
+  instructions?: string;
   color: 'sage' | 'accent' | 'mauve' | 'neutral';
   items: TodayItem[];
 };
@@ -194,6 +196,11 @@ export default function TodayView() {
                 {section.label}
               </h2>
             </div>
+            {section.instructions && (
+              <p className="px-4 pt-3 text-[13px] leading-snug font-medium" style={{ color: 'var(--text)' }}>
+                {section.instructions}
+              </p>
+            )}
             <div className="px-4">
               {section.items.map((item, i) => {
                 const isDone = done.includes(item.id);
@@ -217,11 +224,18 @@ export default function TodayView() {
                           </svg>
                         )}
                       </span>
-                      <span className="flex-1 min-w-0 font-medium text-sm leading-snug" style={{ color: 'var(--text)' }}>
-                        {item.name}
+                      <span className="flex-1 min-w-0">
+                        <span className="block font-semibold text-[15px] leading-snug" style={{ color: 'var(--text)' }}>
+                          {item.name}
+                        </span>
+                        {item.cue && (
+                          <span className="block text-[13px] leading-snug mt-1" style={{ color: 'var(--text-2)' }}>
+                            {item.cue}
+                          </span>
+                        )}
                       </span>
                       {item.detail && (
-                        <span className="text-xs shrink-0" style={{ color: c.main }}>{item.detail}</span>
+                        <span className="text-[13px] font-semibold shrink-0 text-right max-w-[34%]" style={{ color: c.main }}>{item.detail}</span>
                       )}
                     </button>
                     {segments !== null && !isDone && (
