@@ -52,25 +52,29 @@
           "id": "split-squat",
           "name": "Bulgarian split squat",
           "detail": "10 each leg",
-          "cue": "Back foot up on a chair. Hold a 20 lb dumbbell in each hand. Lower your back knee toward the floor, then stand up."
+          "cue": "Back foot up on a chair. Hold a 20 lb dumbbell in each hand. Lower your back knee toward the floor, then stand up.",
+          "figure": "split-squat"
         },
         {
           "id": "tempo-pushup",
           "name": "Slow push-up",
           "detail": "10",
-          "cue": "Take 3 seconds to lower your chest to the floor. Knees down is fine."
+          "cue": "Take 3 seconds to lower your chest to the floor. Knees down is fine.",
+          "figure": "pushup"
         },
         {
           "id": "one-arm-row",
           "name": "One-arm row",
           "detail": "12 each side",
-          "cue": "One 20 lb dumbbell. Free hand on a chair or couch. Pull your elbow back to your hip."
+          "cue": "One 20 lb dumbbell. Free hand on a chair or couch. Pull your elbow back to your hip.",
+          "figure": "row"
         },
         {
           "id": "hip-thrust",
           "name": "Hip thrust",
           "detail": "15",
-          "cue": "Upper back on the couch, one 20 lb dumbbell on your hips. Squeeze your glutes at the top."
+          "cue": "Upper back on the couch, one 20 lb dumbbell on your hips. Squeeze your glutes at the top.",
+          "figure": "hip-thrust"
         }
       ],
       "instructions": "Do all 4 moves in a row. Rest 45 seconds. Repeat 3 times."
@@ -83,19 +87,22 @@
           "id": "sl-rdl",
           "name": "One-leg deadlift",
           "detail": "8 each leg",
-          "cue": "One 20 lb dumbbell. Hinge forward on one leg while the other leg lifts behind you. Go slow."
+          "cue": "One 20 lb dumbbell. Hinge forward on one leg while the other leg lifts behind you. Go slow.",
+          "figure": "sl-rdl"
         },
         {
           "id": "shoulder-press",
           "name": "Shoulder press",
           "detail": "10",
-          "cue": "A 15 lb dumbbell in each hand. Press straight overhead."
+          "cue": "A 15 lb dumbbell in each hand. Press straight overhead.",
+          "figure": "shoulder-press"
         },
         {
           "id": "tempo-goblet",
           "name": "Slow goblet squat",
           "detail": "10",
-          "cue": "One 20 lb dumbbell held at your chest. Take 4 seconds to lower, pause 1 second at the bottom, then stand."
+          "cue": "One 20 lb dumbbell held at your chest. Take 4 seconds to lower, pause 1 second at the bottom, then stand.",
+          "figure": "goblet-squat"
         }
       ],
       "instructions": "Do all 3 moves in a row. Rest 30 seconds. Repeat 3 times."
@@ -115,7 +122,8 @@
             "rounds": 4,
             "workLabel": "Thrusters",
             "restLabel": "Rest"
-          }
+          },
+          "figure": "thruster"
         }
       ],
       "instructions": "40 seconds hard, 20 seconds rest, 4 times. No jumping."

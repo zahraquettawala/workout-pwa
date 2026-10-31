@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import ItemTimer, { type Segment } from './ItemTimer';
+import MoveFigure from './MoveFigure';
 
 type Intervals = {
   workSec: number;
@@ -15,6 +16,7 @@ type TodayItem = {
   name: string;
   detail?: string;
   cue?: string;
+  figure?: string;
   durationSec?: number;
   intervals?: Intervals;
   timer?: boolean;
@@ -228,15 +230,18 @@ export default function TodayView() {
                         <span className="block font-semibold text-[15px] leading-snug" style={{ color: 'var(--text)' }}>
                           {item.name}
                         </span>
+                        {item.detail && (
+                          <span className="block text-sm font-semibold mt-0.5" style={{ color: c.main }}>
+                            {item.detail}
+                          </span>
+                        )}
                         {item.cue && (
                           <span className="block text-[13px] leading-snug mt-1" style={{ color: 'var(--text-2)' }}>
                             {item.cue}
                           </span>
                         )}
                       </span>
-                      {item.detail && (
-                        <span className="text-[13px] font-semibold shrink-0 text-right max-w-[34%]" style={{ color: c.main }}>{item.detail}</span>
-                      )}
+                      {item.figure && <MoveFigure name={item.figure} color={c.main} />}
                     </button>
                     {segments !== null && !isDone && (
                       <div className="pb-3.5">
