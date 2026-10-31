@@ -1,7 +1,7 @@
 {
   "date": "2026-10-31",
   "title": "Saturday run + strength",
-  "subtitle": "~36 min \u00b7 run first, then strength at home \u00b7 no jumping",
+  "subtitle": "~36 min \u00b7 run first, then strength at home \u00b7 jump rope finisher",
   "feeling": "A few easy days, fresh and ready to work hard. Want to sweat and get stronger.",
   "note": "Run first to get the sweat going, then two strength blocks. 'lb' means pounds per dumbbell. Pick a weight where the last 2 reps are hard. Skip the one-leg deadlift if your hamstring tugs.",
   "sections": [
@@ -112,21 +112,20 @@
       "color": "accent",
       "items": [
         {
-          "id": "thrusters",
-          "name": "Dumbbell thruster",
+          "id": "jump-rope",
+          "name": "Jump rope",
           "detail": "4 rounds",
-          "cue": "Two 15 lb dumbbells at your shoulders. Squat down, then stand and press overhead in one smooth motion.",
+          "cue": "Stay light on your toes with small hops. If it gets tiring, slow down instead of stopping.",
           "intervals": {
             "workSec": 40,
             "restSec": 20,
             "rounds": 4,
-            "workLabel": "Thrusters",
+            "workLabel": "Jump",
             "restLabel": "Rest"
-          },
-          "figure": "thruster"
+          }
         }
       ],
-      "instructions": "40 seconds hard, 20 seconds rest, 4 times. No jumping."
+      "instructions": "40 seconds jumping, 20 seconds rest, 4 times."
     },
     {
       "label": "6 \u00b7 Core \u00b7 2 rounds",
