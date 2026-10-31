@@ -1,52 +1,129 @@
 {
-  "date": "2026-10-28",
-  "note": "Today's all engine — keep the jog truly easy and conversational so you can hold the full 3 minutes, and walk the recoveries. In the circuit, move straight from one move to the next and take your 30 seconds between rounds.",
+  "date": "2026-10-31",
+  "title": "Saturday strength + sweat finisher",
+  "subtitle": "~45 min \u00b7 home \u00b7 heavy-feeling tempo work, no jumping",
+  "feeling": "A few easy days, fresh and ready to work hard. Want to sweat and get stronger.",
+  "note": "Pick weights where the last 2 reps of every set are hard. Lower slowly (3-4 sec) on the tempo moves. Rest only as long as listed. Skip the single-leg deadlift if the hamstring tugs.",
   "sections": [
     {
+      "label": "Warm-up",
       "color": "sage",
       "items": [
         {
-          "detail": "20 min",
-          "id": "run-intervals",
-          "intervals": {
-            "restLabel": "Walk",
-            "restSec": 60,
-            "rounds": 5,
-            "workLabel": "Easy jog",
-            "workSec": 180
-          },
-          "name": "Alternate 3 min easy jog / 1 min walk"
+          "id": "warm-up",
+          "name": "March, hip circles, bodyweight squats, band pull-aparts",
+          "detail": "4 min"
         }
-      ],
-      "label": "Step 1 · Outdoor run intervals"
+      ]
     },
     {
+      "label": "Block A \u00b7 3 rounds \u00b7 rest 45 sec",
       "color": "accent",
       "items": [
         {
-          "detail": "2 min",
-          "id": "jump-rope",
-          "name": "Jump rope"
+          "id": "split-squat",
+          "name": "Bulgarian split squat, back foot on chair (two 20s)",
+          "detail": "10 / leg"
         },
         {
-          "detail": "40",
-          "id": "mountain-climbers",
-          "name": "Mountain climbers"
+          "id": "tempo-pushup",
+          "name": "Tempo push-up, 3 sec down (knees if needed)",
+          "detail": "10"
         },
         {
-          "detail": "30 sec",
-          "id": "high-knees",
-          "name": "High knees"
+          "id": "one-arm-row",
+          "name": "One-arm DB row (20 lb)",
+          "detail": "12 / side"
         },
         {
-          "detail": "10",
-          "id": "burpees",
-          "name": "Burpees"
+          "id": "hip-thrust",
+          "name": "DB hip thrust, upper back on couch (20 lb)",
+          "detail": "15"
         }
-      ],
-      "label": "Step 2 · Cardio circuit · 4 rounds · rest 30 sec"
+      ]
+    },
+    {
+      "label": "Block B \u00b7 3 rounds \u00b7 rest 30 sec",
+      "color": "mauve",
+      "items": [
+        {
+          "id": "sl-rdl",
+          "name": "Single-leg Romanian deadlift (20 lb), slow",
+          "detail": "8 / leg"
+        },
+        {
+          "id": "shoulder-press",
+          "name": "Standing DB shoulder press (15 lb each)",
+          "detail": "10"
+        },
+        {
+          "id": "tempo-goblet",
+          "name": "Tempo goblet squat (20 lb), 4 sec down, pause at bottom",
+          "detail": "10"
+        }
+      ]
+    },
+    {
+      "label": "Sweat finisher \u00b7 no jumping",
+      "color": "accent",
+      "items": [
+        {
+          "id": "thrusters",
+          "name": "DB thruster (two 15s)",
+          "detail": "4 x 40 sec",
+          "intervals": {
+            "workSec": 40,
+            "restSec": 20,
+            "rounds": 4,
+            "workLabel": "Thrusters",
+            "restLabel": "Rest"
+          }
+        },
+        {
+          "id": "mtn-climbers",
+          "name": "Mountain climbers",
+          "detail": "4 x 30 sec",
+          "intervals": {
+            "workSec": 30,
+            "restSec": 20,
+            "rounds": 4,
+            "workLabel": "Climbers",
+            "restLabel": "Rest"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Core \u00b7 2 rounds",
+      "color": "mauve",
+      "items": [
+        {
+          "id": "reverse-crunch",
+          "name": "Reverse crunch",
+          "detail": "12"
+        },
+        {
+          "id": "russian-twist",
+          "name": "Russian twist with 10 lb",
+          "detail": "20 total"
+        },
+        {
+          "id": "toe-taps",
+          "name": "Supine toe taps (tabletop legs)",
+          "detail": "12 / side"
+        }
+      ]
+    },
+    {
+      "label": "Cool-down",
+      "color": "neutral",
+      "items": [
+        {
+          "id": "cool-walk",
+          "name": "Easy walk, then quad, chest and glute stretch",
+          "detail": "3 min"
+        }
+      ]
     }
-  ],
-  "subtitle": "~40 min · outdoor run + living room · cardio-heavy, triathlon run training",
-  "title": "Wednesday run intervals + cardio circuit"
+  ]
 }
