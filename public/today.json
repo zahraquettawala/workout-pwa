@@ -1,9 +1,9 @@
 {
   "date": "2026-10-31",
   "title": "Saturday run + strength",
-  "subtitle": "~30 min \u00b7 run first, then strength at home \u00b7 no jumping",
+  "subtitle": "~36 min \u00b7 run first, then strength at home \u00b7 no jumping",
   "feeling": "A few easy days, fresh and ready to work hard. Want to sweat and get stronger.",
-  "note": "Run first to get the sweat going, then one strength block, a finisher and core. 'lb' means pounds per dumbbell. Pick a weight where the last 2 reps are hard.",
+  "note": "Run first to get the sweat going, then two strength blocks. 'lb' means pounds per dumbbell. Pick a weight where the last 2 reps are hard. Skip the one-leg deadlift if your hamstring tugs.",
   "sections": [
     {
       "label": "1 \u00b7 Cardio blast \u00b7 10 min run",
@@ -80,7 +80,35 @@
       "instructions": "Do all 4 moves in a row. Rest 45 seconds. Repeat 2 times."
     },
     {
-      "label": "4 \u00b7 Sweat finisher",
+      "label": "4 \u00b7 Block B \u00b7 2 rounds",
+      "color": "mauve",
+      "instructions": "Do all 3 moves in a row. Rest 30 seconds. Repeat 2 times.",
+      "items": [
+        {
+          "id": "sl-rdl",
+          "name": "One-leg deadlift",
+          "detail": "8 each leg",
+          "cue": "One 20 lb dumbbell. Hinge forward on one leg while the other leg lifts behind you. Go slow.",
+          "figure": "sl-rdl"
+        },
+        {
+          "id": "shoulder-press",
+          "name": "Shoulder press",
+          "detail": "10",
+          "cue": "A 15 lb dumbbell in each hand. Press straight overhead.",
+          "figure": "shoulder-press"
+        },
+        {
+          "id": "tempo-goblet",
+          "name": "Slow goblet squat",
+          "detail": "10",
+          "cue": "One 20 lb dumbbell held at your chest. Take 4 seconds to lower, pause 1 second at the bottom, then stand.",
+          "figure": "goblet-squat"
+        }
+      ]
+    },
+    {
+      "label": "5 \u00b7 Sweat finisher",
       "color": "accent",
       "items": [
         {
@@ -101,7 +129,7 @@
       "instructions": "40 seconds hard, 20 seconds rest, 4 times. No jumping."
     },
     {
-      "label": "5 \u00b7 Core \u00b7 2 rounds",
+      "label": "6 \u00b7 Core \u00b7 2 rounds",
       "color": "mauve",
       "items": [
         {
@@ -126,7 +154,7 @@
       "instructions": "Do all 3 moves in a row. Repeat 2 times."
     },
     {
-      "label": "6 \u00b7 Cool-down",
+      "label": "7 \u00b7 Cool-down",
       "color": "neutral",
       "items": [
         {
