@@ -1,52 +1,32 @@
 {
   "date": "2026-11-02",
-  "title": "Monday energizer",
-  "subtitle": "~28 min \u00b7 outside + home \u00b7 moderate effort, get the heart rate up",
-  "feeling": "Slightly scratchy throat, taking non-drowsy allergy meds. A higher heart rate helps me feel calm and awake.",
-  "note": "Keep it moderate, about 6 out of 10. Drink water before and after. If the air bothers your throat, breathe through your nose and wear a scarf. Stop and rest if you feel unwell.",
+  "title": "Monday home circuit",
+  "subtitle": "~28 min \u00b7 all at home \u00b7 no running, keep the heart rate up",
+  "feeling": "Slightly scratchy throat, taking non-drowsy allergy meds. A higher heart rate helps me feel calm and awake, but I don't want to run.",
+  "note": "Moderate effort, about 6-7 out of 10. Rest is short so your heart rate stays up. Drink water before and after, and stop if you feel unwell.",
   "sections": [
     {
-      "label": "1 \u00b7 Warm-up walk",
+      "label": "1 \u00b7 Warm-up",
       "color": "sage",
       "items": [
         {
-          "id": "warm-walk",
-          "name": "Easy walk outside",
+          "id": "warm-up",
+          "name": "March in place, arm circles, hip circles",
           "detail": "3 min",
-          "cue": "Loosen up and get your breathing going."
+          "cue": "Get loose and get your breathing going."
         }
       ]
     },
     {
-      "label": "2 \u00b7 Jog / walk intervals",
+      "label": "2 \u00b7 Circuit \u00b7 3 rounds",
       "color": "accent",
-      "instructions": "Outside. 2 min easy jog, then 1 min walk, 4 times.",
-      "items": [
-        {
-          "id": "jog-intervals",
-          "name": "Easy jog / walk",
-          "detail": "4 rounds",
-          "cue": "Moderate effort, about 6 out of 10. You should still be able to talk in short sentences.",
-          "intervals": {
-            "workSec": 120,
-            "restSec": 60,
-            "rounds": 4,
-            "workLabel": "Jog",
-            "restLabel": "Walk"
-          }
-        }
-      ]
-    },
-    {
-      "label": "3 \u00b7 Light strength \u00b7 2 rounds",
-      "color": "mauve",
-      "instructions": "Do all 4 moves in a row. Rest 30 seconds. Repeat 2 times.",
+      "instructions": "Do all 4 moves in a row with no rest between them. Rest 20 seconds after the last move. Repeat 3 times.",
       "items": [
         {
           "id": "goblet-squat",
           "name": "Goblet squat",
-          "detail": "10",
-          "cue": "One 20 lb dumbbell held at your chest. Sit down and stand up with control.",
+          "detail": "12",
+          "cue": "One 20 lb dumbbell held at your chest. Sit down and stand up fast but controlled.",
           "figure": "goblet-squat"
         },
         {
@@ -72,7 +52,40 @@
       ]
     },
     {
-      "label": "4 \u00b7 Cool-down",
+      "label": "3 \u00b7 Heart-rate finisher",
+      "color": "mauve",
+      "instructions": "40 seconds hard, 20 seconds rest, 4 times. No jumping.",
+      "items": [
+        {
+          "id": "thrusters",
+          "name": "Dumbbell thruster",
+          "detail": "4 rounds",
+          "cue": "Two 15 lb dumbbells at your shoulders. Squat down, then stand and press overhead in one smooth motion.",
+          "figure": "thruster",
+          "intervals": {
+            "workSec": 40,
+            "restSec": 20,
+            "rounds": 4,
+            "workLabel": "Thrusters",
+            "restLabel": "Rest"
+          }
+        }
+      ]
+    },
+    {
+      "label": "4 \u00b7 Brisk walk",
+      "color": "sage",
+      "items": [
+        {
+          "id": "pad-walk",
+          "name": "Brisk walk on the walking pad",
+          "detail": "5 min",
+          "cue": "A fast pace where you can still talk in short sentences."
+        }
+      ]
+    },
+    {
+      "label": "5 \u00b7 Cool-down",
       "color": "neutral",
       "items": [
         {
