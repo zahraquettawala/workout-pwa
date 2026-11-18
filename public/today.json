@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-02",
-  "title": "Monday home circuit",
-  "subtitle": "~28 min \u00b7 all at home \u00b7 no running, keep the heart rate up",
-  "feeling": "Slightly scratchy throat, taking non-drowsy allergy meds. A higher heart rate helps me feel calm and awake, but I don't want to run.",
-  "note": "Moderate effort, about 6-7 out of 10. Rest is short so your heart rate stays up. Drink water before and after, and stop if you feel unwell.",
+  "date": "2026-11-18",
+  "title": "Wednesday home strength",
+  "subtitle": "~25 min \u00b7 all at home \u00b7 after work, easy to start",
+  "feeling": "Tired and low on energy after being sick last week. Want a short, doable workout at home.",
+  "note": "Keep it moderate, about 6 out of 10, and stop each set with 3 reps left. Short rests keep your heart rate up, so you don't need the treadmill. If your legs are still sore, use lighter weights.",
   "sections": [
     {
       "label": "1 \u00b7 Warm-up",
@@ -13,20 +13,20 @@
           "id": "warm-up",
           "name": "March in place, arm circles, hip circles",
           "detail": "3 min",
-          "cue": "Get loose and get your breathing going."
+          "cue": "Get loose and warm before the weights."
         }
       ]
     },
     {
       "label": "2 \u00b7 Circuit \u00b7 3 rounds",
       "color": "accent",
-      "instructions": "Do all 4 moves in a row with no rest between them. Rest 20 seconds after the last move. Repeat 3 times.",
+      "instructions": "Do all 4 moves in a row with no rest between them. Rest 30 seconds after the last move. Repeat 3 times.",
       "items": [
         {
           "id": "goblet-squat",
           "name": "Goblet squat",
           "detail": "12",
-          "cue": "One 20 lb dumbbell held at your chest. Sit down and stand up fast but controlled.",
+          "cue": "One 20 lb dumbbell held at your chest. Sit down and stand up with control.",
           "figure": "goblet-squat"
         },
         {
@@ -44,17 +44,18 @@
           "figure": "row"
         },
         {
-          "id": "glute-bridge",
-          "name": "Glute bridge",
-          "detail": "15",
-          "cue": "On your back, knees bent. Lift your hips and squeeze your glutes at the top."
+          "id": "shoulder-press",
+          "name": "Shoulder press",
+          "detail": "10",
+          "cue": "A 10-15 lb dumbbell in each hand. Press straight overhead.",
+          "figure": "shoulder-press"
         }
       ]
     },
     {
-      "label": "3 \u00b7 Heart-rate finisher",
+      "label": "3 \u00b7 Cardio finisher",
       "color": "mauve",
-      "instructions": "40 seconds hard, 20 seconds rest, 4 times. No jumping.",
+      "instructions": "40 seconds hard, 20 seconds rest, 4 times. Jump rope outside is a fine swap if you bundle up.",
       "items": [
         {
           "id": "thrusters",
@@ -73,26 +74,14 @@
       ]
     },
     {
-      "label": "4 \u00b7 Brisk walk",
-      "color": "sage",
-      "items": [
-        {
-          "id": "pad-walk",
-          "name": "Brisk walk on the walking pad",
-          "detail": "5 min",
-          "cue": "A fast pace where you can still talk in short sentences."
-        }
-      ]
-    },
-    {
-      "label": "5 \u00b7 Cool-down",
+      "label": "4 \u00b7 Cool-down",
       "color": "neutral",
       "items": [
         {
           "id": "cool-stretch",
           "name": "Stretch and slow breathing",
           "detail": "3 min",
-          "cue": "Stretch hips, chest and neck. Breathe in through your nose, out slowly through your mouth."
+          "cue": "Stretch hips, glutes, chest and back. Breathe in through your nose, out slowly through your mouth."
         }
       ]
     }
