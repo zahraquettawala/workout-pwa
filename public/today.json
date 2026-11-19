@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-18",
-  "title": "Wednesday home strength",
-  "subtitle": "~25 min \u00b7 all at home \u00b7 after work, easy to start",
-  "feeling": "Tired and low on energy after being sick last week. Want a short, doable workout at home.",
-  "note": "Keep it moderate, about 6 out of 10, and stop each set with 3 reps left. Short rests keep your heart rate up, so you don't need the treadmill. If your legs are still sore, use lighter weights.",
+  "date": "2026-11-19",
+  "title": "Thursday backyard strength",
+  "subtitle": "~25 min \u00b7 backyard \u00b7 upper body, core, optional jump rope",
+  "feeling": "Ran about 29 minutes this morning and felt good. First weights since Monday, so I'm easing in.",
+  "note": "Moderate effort, about 6 out of 10, and stop each set with 3 reps left. Your legs already ran today, so this is mostly upper body and core. Dress in layers and warm up before you start. Skip the jump rope if your legs are tired.",
   "sections": [
     {
       "label": "1 \u00b7 Warm-up",
@@ -11,9 +11,9 @@
       "items": [
         {
           "id": "warm-up",
-          "name": "March in place, arm circles, hip circles",
+          "name": "Arm circles, band pull-aparts, hip circles",
           "detail": "3 min",
-          "cue": "Get loose and warm before the weights."
+          "cue": "Get your shoulders and hips warm, especially in the cold."
         }
       ]
     },
@@ -23,24 +23,17 @@
       "instructions": "Do all 4 moves in a row with no rest between them. Rest 30 seconds after the last move. Repeat 3 times.",
       "items": [
         {
-          "id": "goblet-squat",
-          "name": "Goblet squat",
-          "detail": "12",
-          "cue": "One 20 lb dumbbell held at your chest. Sit down and stand up with control.",
-          "figure": "goblet-squat"
-        },
-        {
           "id": "pushup",
           "name": "Push-up",
           "detail": "10",
-          "cue": "Knees down is fine. Chest nearly to the floor.",
+          "cue": "Knees down on the mat is fine. Chest nearly to the floor.",
           "figure": "pushup"
         },
         {
           "id": "one-arm-row",
           "name": "One-arm row",
           "detail": "10 each side",
-          "cue": "One 15-20 lb dumbbell. Free hand on a chair. Pull your elbow to your hip.",
+          "cue": "One 15-20 lb dumbbell. Free hand on a chair or your knee. Pull your elbow to your hip.",
           "figure": "row"
         },
         {
@@ -49,39 +42,69 @@
           "detail": "10",
           "cue": "A 10-15 lb dumbbell in each hand. Press straight overhead.",
           "figure": "shoulder-press"
+        },
+        {
+          "id": "band-pull-apart",
+          "name": "Band pull-apart",
+          "detail": "15",
+          "cue": "Hold the band in front of you at chest height. Pull it apart by squeezing your shoulder blades together."
         }
       ]
     },
     {
-      "label": "3 \u00b7 Cardio finisher",
+      "label": "3 \u00b7 Core \u00b7 2 rounds",
       "color": "mauve",
-      "instructions": "40 seconds hard, 20 seconds rest, 4 times. Jump rope outside is a fine swap if you bundle up.",
+      "instructions": "Do all 3 moves in a row on the mat. Rest 20 seconds. Repeat 2 times.",
       "items": [
         {
-          "id": "thrusters",
-          "name": "Dumbbell thruster",
+          "id": "reverse-crunch",
+          "name": "Reverse crunch",
+          "detail": "12",
+          "cue": "Lie on your back. Bring your knees to your chest and lift your hips a little. Lower slowly."
+        },
+        {
+          "id": "dead-bug",
+          "name": "Dead bug",
+          "detail": "8 each side",
+          "cue": "On your back, arms up and knees bent at 90 degrees. Lower the opposite arm and leg toward the floor. Keep your lower back pressed down."
+        },
+        {
+          "id": "toe-taps",
+          "name": "Toe taps",
+          "detail": "12 each side",
+          "cue": "On your back, legs bent at 90 degrees. Lower one foot to tap the floor, then switch."
+        }
+      ]
+    },
+    {
+      "label": "4 \u00b7 Optional jump rope",
+      "color": "accent",
+      "instructions": "30 seconds jumping, 30 seconds rest, 4 times. Skip it if your legs are tired.",
+      "items": [
+        {
+          "id": "jump-rope",
+          "name": "Jump rope",
           "detail": "4 rounds",
-          "cue": "Two 15 lb dumbbells at your shoulders. Squat down, then stand and press overhead in one smooth motion.",
-          "figure": "thruster",
+          "cue": "Small hops, light on your toes. Slow down instead of stopping if you get tired.",
           "intervals": {
-            "workSec": 40,
-            "restSec": 20,
+            "workSec": 30,
+            "restSec": 30,
             "rounds": 4,
-            "workLabel": "Thrusters",
+            "workLabel": "Jump",
             "restLabel": "Rest"
           }
         }
       ]
     },
     {
-      "label": "4 \u00b7 Cool-down",
+      "label": "5 \u00b7 Cool-down",
       "color": "neutral",
       "items": [
         {
           "id": "cool-stretch",
           "name": "Stretch and slow breathing",
           "detail": "3 min",
-          "cue": "Stretch hips, glutes, chest and back. Breathe in through your nose, out slowly through your mouth."
+          "cue": "Stretch chest, shoulders, hips and calves. Breathe in through your nose, out slowly through your mouth."
         }
       ]
     }
