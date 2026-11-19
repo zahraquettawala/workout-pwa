@@ -135,6 +135,99 @@ function Figure({ name, color }: { name: string; color: string }) {
           </g>
         </>
       );
+    case 'glute-bridge':
+      return (
+        <>
+          <ellipse cx="92" cy="102" rx="12" ry="9" {...m} />
+          <g {...LINE}>
+            <polyline points="46,128 88,104 116,94 124,133 138,133" />
+            <polyline points="46,131 80,132" />
+            <circle cx="30" cy="126" r="8" />
+          </g>
+        </>
+      );
+    case 'reverse-crunch':
+      return (
+        <>
+          <ellipse cx="62" cy="126" rx="20" ry="7" {...m} />
+          <g {...LINE}>
+            <polyline points="44,130 84,124" />
+            <polyline points="84,124 88,92 122,96" />
+            <polyline points="44,131 74,133" />
+            <circle cx="30" cy="126" r="8" />
+          </g>
+        </>
+      );
+    case 'dead-bug':
+      return (
+        <>
+          <ellipse cx="62" cy="126" rx="20" ry="7" {...m} />
+          <g {...LINE}>
+            <polyline points="44,130 82,128" />
+            <polyline points="82,128 88,94 124,98" />
+            <polyline points="82,128 150,122" />
+            <polyline points="44,130 46,96" />
+            <polyline points="48,130 56,98" />
+            <circle cx="30" cy="126" r="8" />
+          </g>
+        </>
+      );
+    case 'toe-taps':
+      return (
+        <>
+          <ellipse cx="62" cy="126" rx="20" ry="7" {...m} />
+          <g {...LINE}>
+            <polyline points="44,130 82,128" />
+            <polyline points="82,128 88,94 124,98" />
+            <polyline points="82,128 96,104 122,132" />
+            <polyline points="44,131 74,133" />
+            <circle cx="30" cy="126" r="8" />
+          </g>
+        </>
+      );
+    case 'russian-twist':
+      return (
+        <>
+          <ellipse cx="70" cy="108" rx="14" ry="10" {...m} />
+          <g {...LINE}>
+            <polyline points="80,126 56,88" />
+            <polyline points="80,126 112,108 130,124" />
+            <polyline points="58,90 76,96 96,102" />
+            <circle cx="50" cy="78" r="8" />
+          </g>
+          <rect x="92" y="96" width="14" height="12" rx="2" {...BELL} />
+        </>
+      );
+    case 'pull-apart':
+      return (
+        <>
+          <ellipse cx="87" cy="66" rx="20" ry="8" {...m} />
+          <g {...LINE}>
+            <polyline points="87,64 87,100" />
+            <polyline points="75,133 87,100 99,133" />
+            <polyline points="70,64 34,64" />
+            <polyline points="104,64 140,64" />
+            <circle cx="87" cy="48" r="8" />
+          </g>
+          <line x1="34" y1="68" x2="140" y2="68" stroke={color} strokeWidth="2" strokeLinecap="round" />
+        </>
+      );
+    case 'jump-rope':
+      return (
+        <>
+          <circle cx="75" cy="118" r="7" {...m} />
+          <circle cx="99" cy="118" r="7" {...m} />
+          <path d="M58,90 C44,16 130,16 116,90" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" />
+          <g {...LINE}>
+            <polyline points="87,56 87,96" />
+            <polyline points="75,126 87,96 99,126" />
+            <polyline points="70,60 62,78 58,90" />
+            <polyline points="104,60 112,78 116,90" />
+            <polyline points="70,60 104,60" />
+            <circle cx="87" cy="44" r="8" />
+          </g>
+        </>
+      );
     default:
       return null;
   }
@@ -149,6 +242,13 @@ export const FIGURE_NAMES = [
   'shoulder-press',
   'goblet-squat',
   'thruster',
+  'glute-bridge',
+  'reverse-crunch',
+  'dead-bug',
+  'toe-taps',
+  'russian-twist',
+  'pull-apart',
+  'jump-rope',
 ];
 
 export default function MoveFigure({ name, color }: { name: string; color: string }) {

@@ -35,7 +35,8 @@
           "id": "band-pull-apart",
           "name": "Band pull-apart",
           "detail": "15",
-          "cue": "Hold the band in front of you at chest height. Pull it apart by squeezing your shoulder blades together."
+          "cue": "Hold the band in front of you at chest height. Pull it apart by squeezing your shoulder blades together.",
+          "figure": "pull-apart"
         }
       ]
     },
@@ -48,19 +49,22 @@
           "id": "reverse-crunch",
           "name": "Reverse crunch",
           "detail": "12",
-          "cue": "Lie on your back. Bring your knees to your chest and lift your hips a little. Lower slowly."
+          "cue": "Lie on your back. Bring your knees to your chest and lift your hips a little. Lower slowly.",
+          "figure": "reverse-crunch"
         },
         {
           "id": "dead-bug",
           "name": "Dead bug",
           "detail": "8 each side",
-          "cue": "On your back, arms up and knees bent at 90 degrees. Lower the opposite arm and leg toward the floor. Keep your lower back pressed down."
+          "cue": "On your back, arms up and knees bent at 90 degrees. Lower the opposite arm and leg toward the floor. Keep your lower back pressed down.",
+          "figure": "dead-bug"
         },
         {
           "id": "toe-taps",
           "name": "Toe taps",
           "detail": "12 each side",
-          "cue": "On your back, legs bent at 90 degrees. Lower one foot to tap the floor, then switch."
+          "cue": "On your back, legs bent at 90 degrees. Lower one foot to tap the floor, then switch.",
+          "figure": "toe-taps"
         }
       ]
     },
