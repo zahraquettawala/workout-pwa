@@ -1,26 +1,14 @@
 {
   "date": "2026-11-19",
   "title": "Thursday backyard strength",
-  "subtitle": "~25 min \u00b7 backyard \u00b7 upper body, core, optional jump rope",
+  "subtitle": "~15 min \u00b7 backyard \u00b7 short version: upper body and core",
   "feeling": "Ran about 29 minutes this morning and felt good. First weights since Monday, so I'm easing in.",
-  "note": "Moderate effort, about 6 out of 10, and stop each set with 3 reps left. Your legs already ran today, so this is mostly upper body and core. Dress in layers and warm up before you start. Skip the jump rope if your legs are tired.",
+  "note": "Short version: you're already warm from your run, so start right away. Moderate effort, about 6 out of 10, and stop each set with 3 reps left.",
   "sections": [
     {
-      "label": "1 \u00b7 Warm-up",
-      "color": "sage",
-      "items": [
-        {
-          "id": "warm-up",
-          "name": "Arm circles, band pull-aparts, hip circles",
-          "detail": "3 min",
-          "cue": "Get your shoulders and hips warm, especially in the cold."
-        }
-      ]
-    },
-    {
-      "label": "2 \u00b7 Circuit \u00b7 3 rounds",
+      "label": "1 \u00b7 Circuit \u00b7 2 rounds",
       "color": "accent",
-      "instructions": "Do all 4 moves in a row with no rest between them. Rest 30 seconds after the last move. Repeat 3 times.",
+      "instructions": "Do all 4 moves in a row with no rest between them. Rest 30 seconds after the last move. Repeat 2 times.",
       "items": [
         {
           "id": "pushup",
@@ -52,7 +40,7 @@
       ]
     },
     {
-      "label": "3 \u00b7 Core \u00b7 2 rounds",
+      "label": "2 \u00b7 Core \u00b7 2 rounds",
       "color": "mauve",
       "instructions": "Do all 3 moves in a row on the mat. Rest 20 seconds. Repeat 2 times.",
       "items": [
@@ -77,33 +65,13 @@
       ]
     },
     {
-      "label": "4 \u00b7 Optional jump rope",
-      "color": "accent",
-      "instructions": "30 seconds jumping, 30 seconds rest, 4 times. Skip it if your legs are tired.",
-      "items": [
-        {
-          "id": "jump-rope",
-          "name": "Jump rope",
-          "detail": "4 rounds",
-          "cue": "Small hops, light on your toes. Slow down instead of stopping if you get tired.",
-          "intervals": {
-            "workSec": 30,
-            "restSec": 30,
-            "rounds": 4,
-            "workLabel": "Jump",
-            "restLabel": "Rest"
-          }
-        }
-      ]
-    },
-    {
-      "label": "5 \u00b7 Cool-down",
+      "label": "3 \u00b7 Cool-down",
       "color": "neutral",
       "items": [
         {
           "id": "cool-stretch",
           "name": "Stretch and slow breathing",
-          "detail": "3 min",
+          "detail": "2 min",
           "cue": "Stretch chest, shoulders, hips and calves. Breathe in through your nose, out slowly through your mouth."
         }
       ]
