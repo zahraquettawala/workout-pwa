@@ -1,57 +1,63 @@
 {
-  "date": "2026-11-19",
-  "title": "Thursday backyard strength",
-  "subtitle": "~15 min \u00b7 backyard \u00b7 short version: upper body and core",
-  "feeling": "Ran about 29 minutes this morning and felt good. First weights since Monday, so I'm easing in.",
-  "note": "Short version: you're already warm from your run, so start right away. Moderate effort, about 6 out of 10, and stop each set with 3 reps left.",
+  "date": "2026-11-20",
+  "title": "Friday lower body and glutes",
+  "subtitle": "~30 min · at home · after work",
+  "feeling": "Ran yesterday, so keeping today moderate. Legs and glutes, no upper body.",
+  "note": "Moderate effort, about 6 out of 10, and stop each set with 2 to 3 reps left. If your hamstring feels tight, go slow on the deadlifts or swap them for extra glute bridges. Nice work getting this in at the end of the week.",
   "sections": [
     {
-      "label": "1 \u00b7 Circuit \u00b7 2 rounds",
-      "color": "accent",
-      "instructions": "Do all 4 moves in a row with no rest between them. Rest 30 seconds after the last move. Repeat 2 times.",
+      "label": "1 · Warm-up",
+      "color": "sage",
       "items": [
         {
-          "id": "pushup",
-          "name": "Push-up",
-          "detail": "10",
-          "cue": "Knees down on the mat is fine. Chest nearly to the floor.",
-          "figure": "pushup"
-        },
-        {
-          "id": "one-arm-row",
-          "name": "One-arm row",
-          "detail": "10 each side",
-          "cue": "One 15-20 lb dumbbell. Free hand on a chair or your knee. Pull your elbow to your hip.",
-          "figure": "row"
-        },
-        {
-          "id": "shoulder-press",
-          "name": "Shoulder press",
-          "detail": "10",
-          "cue": "A 10-15 lb dumbbell in each hand. Press straight overhead.",
-          "figure": "shoulder-press"
-        },
-        {
-          "id": "band-pull-apart",
-          "name": "Band pull-apart",
-          "detail": "15",
-          "cue": "Hold the band in front of you at chest height. Pull it apart by squeezing your shoulder blades together.",
-          "figure": "pull-apart"
+          "id": "warm-up",
+          "name": "March in place, leg swings, hip circles",
+          "detail": "3 min",
+          "cue": "Easy pace. Swing each leg front to back and side to side to loosen your hips and hamstrings.",
+          "figure": "march"
         }
       ]
     },
     {
-      "label": "2 \u00b7 Core \u00b7 2 rounds",
-      "color": "mauve",
-      "instructions": "Do all 3 moves in a row on the mat. Rest 20 seconds. Repeat 2 times.",
+      "label": "2 · Circuit · 3 rounds",
+      "color": "accent",
+      "instructions": "Do all 4 moves in a row with no rest between them. Rest 30 seconds after the last move. Repeat 3 times.",
       "items": [
         {
-          "id": "reverse-crunch",
-          "name": "Reverse crunch",
-          "detail": "12",
-          "cue": "Lie on your back. Bring your knees to your chest and lift your hips a little. Lower slowly.",
-          "figure": "reverse-crunch"
+          "id": "bulgarian-split-squat",
+          "name": "Bulgarian split squat",
+          "detail": "10 each leg",
+          "cue": "Back foot on a couch or chair. Bodyweight is fine, or hold a 10-15 lb dumbbell in each hand. Lower straight down with your front knee over your toes.",
+          "figure": "split-squat"
         },
+        {
+          "id": "rdl",
+          "name": "Romanian deadlift",
+          "detail": "12",
+          "cue": "A 20 lb dumbbell in each hand. Soft knees, push your hips back, and slide the weights down your legs. Stop when you feel a stretch, then squeeze your glutes to stand.",
+          "figure": "rdl"
+        },
+        {
+          "id": "glute-bridge",
+          "name": "Glute bridge",
+          "detail": "15",
+          "cue": "On your back, knees bent, feet flat. Press through your heels to lift your hips. Squeeze at the top for a second.",
+          "figure": "glute-bridge"
+        },
+        {
+          "id": "lateral-walk",
+          "name": "Banded lateral walk",
+          "detail": "12 steps each way",
+          "cue": "Band just above your knees. Sit into a slight squat and step sideways, keeping tension on the band.",
+          "figure": "lateral-walk"
+        }
+      ]
+    },
+    {
+      "label": "3 · Core · 2 rounds",
+      "color": "mauve",
+      "instructions": "Do both moves in a row on the mat. Rest 20 seconds. Repeat 2 times.",
+      "items": [
         {
           "id": "dead-bug",
           "name": "Dead bug",
@@ -60,23 +66,24 @@
           "figure": "dead-bug"
         },
         {
-          "id": "toe-taps",
-          "name": "Toe taps",
-          "detail": "12 each side",
-          "cue": "On your back, legs bent at 90 degrees. Lower one foot to tap the floor, then switch.",
-          "figure": "toe-taps"
+          "id": "reverse-crunch",
+          "name": "Reverse crunch",
+          "detail": "12",
+          "cue": "Lie on your back. Bring your knees to your chest and lift your hips a little. Lower slowly.",
+          "figure": "reverse-crunch"
         }
       ]
     },
     {
-      "label": "3 \u00b7 Cool-down",
+      "label": "4 · Cool-down",
       "color": "neutral",
       "items": [
         {
           "id": "cool-stretch",
-          "name": "Stretch and slow breathing",
-          "detail": "2 min",
-          "cue": "Stretch chest, shoulders, hips and calves. Breathe in through your nose, out slowly through your mouth."
+          "name": "Hamstring, hip and glute stretch",
+          "detail": "3 min",
+          "cue": "Sit with your legs out and reach gently toward your toes. Then a figure-four stretch for each glute. Breathe slowly.",
+          "figure": "stretch"
         }
       ]
     }

@@ -228,6 +228,65 @@ function Figure({ name, color }: { name: string; color: string }) {
           </g>
         </>
       );
+    case 'rdl':
+      return (
+        <>
+          <ellipse cx="80" cy="100" rx="16" ry="7" transform="rotate(-80 80 100)" {...m} />
+          <g {...LINE}>
+            <polyline points="98,133 84,133 84,110 78,86" />
+            <polyline points="78,86 120,70" />
+            <polyline points="118,72 116,104" />
+            <circle cx="132" cy="64" r="8" />
+          </g>
+          <rect x="106" y="104" width="20" height="7" rx="2" {...BELL} />
+        </>
+      );
+    case 'lateral-walk':
+      return (
+        <>
+          <circle cx="78" cy="98" r="8" {...m} />
+          <circle cx="96" cy="98" r="8" {...m} />
+          <g {...LINE}>
+            <polyline points="87,62 87,98" />
+            <polyline points="74,64 100,64" />
+            <polyline points="74,64 78,82 87,80" />
+            <polyline points="100,64 96,82 87,80" />
+            <polyline points="64,133 70,114 87,98 104,114 110,133" />
+            <circle cx="87" cy="50" r="8" />
+          </g>
+          <line x1="71" y1="113" x2="103" y2="113" stroke={color} strokeWidth="2.4" strokeLinecap="round" />
+          <g {...LINE} strokeWidth={2}>
+            <polyline points="128,110 154,110" />
+            <polyline points="148,104 154,110 148,116" />
+          </g>
+        </>
+      );
+    case 'march':
+      return (
+        <>
+          <ellipse cx="98" cy="100" rx="13" ry="6" {...m} />
+          <g {...LINE}>
+            <polyline points="87,60 87,98" />
+            <polyline points="84,133 86,116 87,98" />
+            <polyline points="87,98 108,98 106,120" />
+            <polyline points="87,64 100,78 110,70" />
+            <polyline points="87,64 78,82 72,94" />
+            <circle cx="88" cy="47" r="8" />
+          </g>
+        </>
+      );
+    case 'stretch':
+      return (
+        <>
+          <ellipse cx="96" cy="128" rx="24" ry="5" {...m} />
+          <g {...LINE}>
+            <polyline points="50,130 136,130 140,120" />
+            <polyline points="50,130 86,100" />
+            <polyline points="84,102 124,122" />
+            <circle cx="96" cy="92" r="8" />
+          </g>
+        </>
+      );
     default:
       return null;
   }
@@ -249,6 +308,10 @@ export const FIGURE_NAMES = [
   'russian-twist',
   'pull-apart',
   'jump-rope',
+  'rdl',
+  'lateral-walk',
+  'march',
+  'stretch',
 ];
 
 export default function MoveFigure({ name, color }: { name: string; color: string }) {
