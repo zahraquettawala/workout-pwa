@@ -1,89 +1,56 @@
 {
-  "date": "2026-11-20",
-  "title": "Friday lower body and glutes",
-  "subtitle": "~30 min · at home · after work",
-  "feeling": "Ran yesterday, so keeping today moderate. Legs and glutes, no upper body.",
-  "note": "Moderate effort, about 6 out of 10, and stop each set with 2 to 3 reps left. If your hamstring feels tight, go slow on the deadlifts or swap them for extra glute bridges. Nice work getting this in at the end of the week.",
+  "date": "2026-11-21",
+  "title": "Saturday jump rope finisher",
+  "subtitle": "~10 min · at home · after full body weights",
+  "feeling": "You just finished a full body weights class. This is a short, fun cardio finisher.",
+  "note": "Keep it light and bouncy, about 6 out of 10. Small jumps on the balls of your feet. If you trip, just restart, no big deal. Great work today!",
   "sections": [
     {
       "label": "1 · Warm-up",
       "color": "sage",
       "items": [
         {
-          "id": "warm-up",
-          "name": "March in place, leg swings, hip circles",
-          "detail": "3 min",
-          "cue": "Easy pace. Swing each leg front to back and side to side to loosen your hips and hamstrings.",
-          "figure": "march"
+          "id": "rope-warm-up",
+          "name": "Easy bounce",
+          "detail": "90 sec",
+          "cue": "Slow, easy jumps or a gentle bounce in place. Loosen your ankles and shoulders.",
+          "figure": "jump-rope",
+          "durationSec": 90
         }
       ]
     },
     {
-      "label": "2 · Circuit · 3 rounds",
+      "label": "2 · Intervals · 8 rounds",
       "color": "accent",
-      "instructions": "Do all 4 moves in a row with no rest between them. Rest 30 seconds after the last move. Repeat 3 times.",
+      "instructions": "40 seconds jumping, 20 seconds rest. The timer runs all 8 rounds for you.",
       "items": [
         {
-          "id": "bulgarian-split-squat",
-          "name": "Bulgarian split squat",
-          "detail": "10 each leg",
-          "cue": "Back foot on a couch or chair. Bodyweight is fine, or hold a 10-15 lb dumbbell in each hand. Lower straight down with your front knee over your toes.",
-          "figure": "split-squat"
-        },
-        {
-          "id": "rdl",
-          "name": "Romanian deadlift",
-          "detail": "12",
-          "cue": "A 20 lb dumbbell in each hand. Soft knees, push your hips back, and slide the weights down your legs. Stop when you feel a stretch, then squeeze your glutes to stand.",
-          "figure": "rdl"
-        },
-        {
-          "id": "glute-bridge",
-          "name": "Glute bridge",
-          "detail": "15",
-          "cue": "On your back, knees bent, feet flat. Press through your heels to lift your hips. Squeeze at the top for a second.",
-          "figure": "glute-bridge"
-        },
-        {
-          "id": "lateral-walk",
-          "name": "Banded lateral walk",
-          "detail": "12 steps each way",
-          "cue": "Band just above your knees. Sit into a slight squat and step sideways, keeping tension on the band.",
-          "figure": "lateral-walk"
+          "id": "rope-intervals",
+          "name": "Jump rope",
+          "detail": "40 sec on / 20 sec off × 8",
+          "cue": "Steady rhythm, elbows close to your sides, turn the rope with your wrists. Try alternating feet or a little side to side if you want variety.",
+          "figure": "jump-rope",
+          "intervals": {
+            "workSec": 40,
+            "restSec": 20,
+            "rounds": 8,
+            "workLabel": "Jump",
+            "restLabel": "Rest"
+          }
         }
       ]
     },
     {
-      "label": "3 · Core · 2 rounds",
-      "color": "mauve",
-      "instructions": "Do both moves in a row on the mat. Rest 20 seconds. Repeat 2 times.",
-      "items": [
-        {
-          "id": "dead-bug",
-          "name": "Dead bug",
-          "detail": "8 each side",
-          "cue": "On your back, arms up and knees bent at 90 degrees. Lower the opposite arm and leg toward the floor. Keep your lower back pressed down.",
-          "figure": "dead-bug"
-        },
-        {
-          "id": "reverse-crunch",
-          "name": "Reverse crunch",
-          "detail": "12",
-          "cue": "Lie on your back. Bring your knees to your chest and lift your hips a little. Lower slowly.",
-          "figure": "reverse-crunch"
-        }
-      ]
-    },
-    {
-      "label": "4 · Cool-down",
+      "label": "3 · Cool-down",
       "color": "neutral",
       "items": [
         {
-          "id": "cool-stretch",
-          "name": "Hamstring, hip and glute stretch",
-          "detail": "3 min",
-          "cue": "Sit with your legs out and reach gently toward your toes. Then a figure-four stretch for each glute. Breathe slowly.",
-          "figure": "stretch"
+          "id": "rope-cool-down",
+          "name": "Calf, hamstring and shoulder stretch",
+          "detail": "1 min",
+          "cue": "Stretch each calf against a wall, reach gently toward your toes, and roll your shoulders. Breathe slowly.",
+          "figure": "stretch",
+          "durationSec": 60
         }
       ]
     }
