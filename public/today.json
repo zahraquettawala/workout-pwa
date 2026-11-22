@@ -1,56 +1,151 @@
 {
-  "date": "2026-11-21",
-  "title": "Saturday jump rope finisher",
-  "subtitle": "~10 min · at home · after full body weights",
-  "feeling": "You just finished a full body weights class. This is a short, fun cardio finisher.",
-  "note": "Keep it light and bouncy, about 6 out of 10. Small jumps on the balls of your feet. If you trip, just restart, no big deal. Great work today!",
+  "date": "2026-11-22",
+  "title": "Sunday run + abs",
+  "subtitle": "~50 min · outside or treadmill · run intervals and a core circuit",
+  "feeling": "Yesterday was full body weights, so today your muscles get a break from lifting. A run to get your rhythm back, then a solid ab circuit.",
+  "note": "Keep the run conversational, with the faster minutes at about 7 out of 10. If your legs feel heavy or any pelvic pain shows up, keep the whole thing easy or switch to a brisk walk. That still counts. Every piece you tap off today is a win.",
   "sections": [
     {
       "label": "1 · Warm-up",
       "color": "sage",
       "items": [
         {
-          "id": "rope-warm-up",
-          "name": "Easy bounce",
-          "detail": "90 sec",
-          "cue": "Slow, easy jumps or a gentle bounce in place. Loosen your ankles and shoulders.",
-          "figure": "jump-rope",
-          "durationSec": 90
+          "id": "sun-brisk-walk",
+          "name": "Brisk walk",
+          "detail": "3 min",
+          "cue": "Easy pace, swing your arms, let your breathing settle in.",
+          "figure": "march",
+          "durationSec": 180
+        },
+        {
+          "id": "sun-leg-swings",
+          "name": "Leg swings + easy hamstring stretch",
+          "detail": "2 min",
+          "cue": "10 front-to-back swings per leg, holding a wall. Then a gentle hamstring reach, no bouncing. Your hamstring likes a slow start.",
+          "figure": "stretch",
+          "durationSec": 120
         }
       ]
     },
     {
-      "label": "2 · Intervals · 8 rounds",
+      "label": "2 · Run · about 30 min",
       "color": "accent",
-      "instructions": "40 seconds jumping, 20 seconds rest. The timer runs all 8 rounds for you.",
+      "instructions": "Start the timer on each step and it counts you through. The middle step runs all 6 rounds of faster and easy for you.",
       "items": [
         {
-          "id": "rope-intervals",
-          "name": "Jump rope",
-          "detail": "40 sec on / 20 sec off × 8",
-          "cue": "Steady rhythm, elbows close to your sides, turn the rope with your wrists. Try alternating feet or a little side to side if you want variety.",
-          "figure": "jump-rope",
+          "id": "sun-run-easy",
+          "name": "Easy run",
+          "detail": "10 min",
+          "cue": "Slow and relaxed. You should be able to talk in full sentences.",
+          "figure": "run",
+          "durationSec": 600
+        },
+        {
+          "id": "sun-run-intervals",
+          "name": "Pickups",
+          "detail": "1 min faster / 2 min easy × 6",
+          "cue": "Faster means quicker feet and a bit more effort, not a sprint. On the easy minutes, slow right down and let your breath come back.",
+          "figure": "run",
           "intervals": {
-            "workSec": 40,
-            "restSec": 20,
-            "rounds": 8,
-            "workLabel": "Jump",
-            "restLabel": "Rest"
+            "workSec": 60,
+            "restSec": 120,
+            "rounds": 6,
+            "workLabel": "Faster",
+            "restLabel": "Easy"
           }
+        },
+        {
+          "id": "sun-run-finish",
+          "name": "Finish easy",
+          "detail": "4 min",
+          "cue": "Back to an easy jog. Relax your shoulders and enjoy it.",
+          "figure": "run",
+          "durationSec": 240
         }
       ]
     },
     {
-      "label": "3 · Cool-down",
+      "label": "3 · Abs circuit · 2 rounds · ~12 min",
+      "color": "mauve",
+      "instructions": "Go through the list, then do it all once more. Rest about 15 sec between moves. Tap a move after round 2.",
+      "items": [
+        {
+          "id": "sun-dead-bug",
+          "name": "Dead bug",
+          "detail": "45 sec",
+          "cue": "Low back pressed into the mat. Lower the opposite arm and leg slowly, breathe out as you reach.",
+          "figure": "dead-bug",
+          "durationSec": 45
+        },
+        {
+          "id": "sun-bird-dog",
+          "name": "Bird dog",
+          "detail": "45 sec, alternating",
+          "cue": "On hands and knees. Reach one arm forward and the opposite leg back, hold for a breath, switch. Keep your hips level.",
+          "figure": "bird-dog",
+          "durationSec": 45
+        },
+        {
+          "id": "sun-side-plank",
+          "name": "Side plank on your hand",
+          "detail": "30 sec/side",
+          "cue": "Hand right under your shoulder, arm straight. Lift your hips and reach the top arm up. Drop the bottom knee to the mat if needed.",
+          "figure": "side-plank",
+          "durationSec": 60
+        },
+        {
+          "id": "sun-reverse-crunch",
+          "name": "Reverse crunch",
+          "detail": "40 sec",
+          "cue": "Knees bent, curl your hips up off the mat using your lower abs, lower slowly. No swinging.",
+          "figure": "reverse-crunch",
+          "durationSec": 40
+        },
+        {
+          "id": "sun-russian-twist",
+          "name": "Russian twist",
+          "detail": "40 sec · 10 lb (or no weight)",
+          "cue": "Lean back a little with a tall chest. Rotate from your ribs, not just your arms. Heels can stay down.",
+          "figure": "russian-twist",
+          "durationSec": 40
+        },
+        {
+          "id": "sun-toe-taps",
+          "name": "Toe taps",
+          "detail": "40 sec",
+          "cue": "Legs in tabletop, tap one heel down at a time. Keep your low back on the mat.",
+          "figure": "toe-taps",
+          "durationSec": 40
+        },
+        {
+          "id": "sun-glute-bridge",
+          "name": "Glute bridge",
+          "detail": "45 sec",
+          "cue": "Feet flat, push through your heels, squeeze at the top for a second. Feels great after a run.",
+          "figure": "glute-bridge",
+          "durationSec": 45
+        }
+      ]
+    },
+    {
+      "label": "4 · Cool-down",
       "color": "neutral",
       "items": [
         {
-          "id": "rope-cool-down",
-          "name": "Calf, hamstring and shoulder stretch",
-          "detail": "1 min",
-          "cue": "Stretch each calf against a wall, reach gently toward your toes, and roll your shoulders. Breathe slowly.",
+          "id": "sun-cool-walk",
+          "name": "Walk it out",
+          "detail": "2 min",
+          "cue": "Slow walk, long exhales.",
+          "figure": "march",
+          "durationSec": 120
+        },
+        {
+          "id": "sun-cool-stretch",
+          "name": "Hamstring, hip and calf stretch",
+          "detail": "3 min",
+          "cue": "Hold each stretch about 30 sec per side. Gentle on the hamstring, no forcing it.",
           "figure": "stretch",
-          "durationSec": 60
+          "durationSec": 180
         }
       ]
     }

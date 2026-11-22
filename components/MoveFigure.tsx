@@ -287,6 +287,46 @@ function Figure({ name, color }: { name: string; color: string }) {
           </g>
         </>
       );
+    case 'run':
+      return (
+        <>
+          <ellipse cx="92" cy="104" rx="14" ry="8" {...m} />
+          <g {...LINE}>
+            <polyline points="92,56 86,92" />
+            <polyline points="86,92 106,106 102,131" />
+            <polyline points="86,92 72,114 52,110" />
+            <polyline points="91,62 102,78 112,68" />
+            <polyline points="91,62 78,76 72,88" />
+            <circle cx="94" cy="44" r="8" />
+          </g>
+        </>
+      );
+    case 'bird-dog':
+      return (
+        <>
+          <ellipse cx="78" cy="96" rx="20" ry="7" {...m} />
+          <g {...LINE}>
+            <polyline points="54,93 100,95" />
+            <polyline points="54,93 56,133" />
+            <polyline points="100,95 98,133 124,133" />
+            <polyline points="54,92 14,88" />
+            <polyline points="100,95 154,89" />
+            <circle cx="42" cy="78" r="8" />
+          </g>
+        </>
+      );
+    case 'side-plank':
+      return (
+        <>
+          <ellipse cx="96" cy="111" rx="18" ry="7" {...m} />
+          <g {...LINE}>
+            <polyline points="52,92 150,131" />
+            <polyline points="52,92 52,133" />
+            <polyline points="52,92 56,54" />
+            <circle cx="40" cy="86" r="8" />
+          </g>
+        </>
+      );
     default:
       return null;
   }
@@ -312,6 +352,9 @@ export const FIGURE_NAMES = [
   'lateral-walk',
   'march',
   'stretch',
+  'run',
+  'bird-dog',
+  'side-plank',
 ];
 
 export default function MoveFigure({ name, color }: { name: string; color: string }) {
