@@ -327,6 +327,54 @@ function Figure({ name, color }: { name: string; color: string }) {
           </g>
         </>
       );
+    case 'reverse-lunge':
+      return (
+        <>
+          <ellipse cx="96" cy="94" rx="16" ry="7" {...m} />
+          <g {...LINE}>
+            <polyline points="84,92 108,95 106,133 118,133" />
+            <polyline points="84,92 66,124 46,128 42,133" />
+            <polyline points="84,92 86,54" />
+            <polyline points="86,58 82,76 80,92" />
+            <circle cx="87" cy="41" r="8" />
+          </g>
+          <rect x="74" y="92" width="14" height="7" rx="2" {...BELL} />
+        </>
+      );
+    case 'sumo-squat':
+      return (
+        <>
+          <ellipse cx="70" cy="102" rx="13" ry="6" transform="rotate(14 70 102)" {...m} />
+          <ellipse cx="104" cy="102" rx="13" ry="6" transform="rotate(-14 104 102)" {...m} />
+          <g {...LINE}>
+            <polyline points="87,58 87,96" />
+            <polyline points="48,133 56,133 60,106 87,96 114,106 118,133 126,133" />
+            <polyline points="74,62 100,62" />
+            <polyline points="74,62 80,82 87,92" />
+            <polyline points="100,62 94,82 87,92" />
+            <circle cx="87" cy="46" r="8" />
+          </g>
+          <rect x="83" y="92" width="8" height="18" rx="2" {...BELL} />
+        </>
+      );
+    case 'skater':
+      return (
+        <>
+          <ellipse cx="98" cy="102" rx="14" ry="7" transform="rotate(60 98 102)" {...m} />
+          <g {...LINE}>
+            <polyline points="92,92 106,112 100,133 112,133" />
+            <polyline points="92,92 74,114 58,126" />
+            <polyline points="92,92 80,58" />
+            <polyline points="82,62 98,76 110,74" />
+            <polyline points="82,62 66,70 56,64" />
+            <circle cx="76" cy="46" r="8" />
+          </g>
+          <g {...LINE} strokeWidth={2}>
+            <polyline points="150,90 124,90" />
+            <polyline points="130,84 124,90 130,96" />
+          </g>
+        </>
+      );
     default:
       return null;
   }
@@ -355,6 +403,9 @@ export const FIGURE_NAMES = [
   'run',
   'bird-dog',
   'side-plank',
+  'reverse-lunge',
+  'sumo-squat',
+  'skater',
 ];
 
 export default function MoveFigure({ name, color }: { name: string; color: string }) {
