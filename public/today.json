@@ -72,7 +72,7 @@
           "id": "mon-jump-rope",
           "name": "Jump rope",
           "detail": "1 min",
-          "cue": "Any pace. Then rest 1 min before the next round.",
+          "cue": "Any pace, even easy bounces. Then rest 1 min before the next round.",
           "figure": "jump-rope",
           "durationSec": 60
         }
