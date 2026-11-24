@@ -1,61 +1,48 @@
 {
   "date": "2026-11-24",
-  "title": "Tuesday HIIT + abs",
-  "subtitle": "~45 min · at home · follow Madeline Raskin",
-  "feeling": "No thinking today. Press play, follow along, sweat, and start the day feeling good.",
-  "note": "Your period is close, so listen to your body. If your uterus starts to flare up, step the jumps out or stop and rest. That still counts. Eat a real breakfast when you're done.",
+  "title": "Tuesday afternoon legs",
+  "subtitle": "~32 min · at home · 15 lb dumbbells + mat",
+  "feeling": "Simple and steady: one round of 6 moves, repeat it. Short cues, no thinking.",
+  "note": "Keep water close and sip between rounds. If you feel dizzy at all, stop and sit down. 2 rounds is still a great workout. No jumping needed today.",
   "sections": [
     {
-      "label": "1 · Before you start",
+      "label": "1 · Warm-up · 4 min",
       "color": "sage",
       "items": [
-        {
-          "id": "tue-snack",
-          "name": "Small snack + water",
-          "detail": "5 min before",
-          "cue": "Half a banana or a few spoons of Greek yogurt with honey, plus a big glass of water.",
-          "figure": "march"
-        }
+        { "id": "tue2-march", "name": "March in place", "detail": "1 min", "cue": "Easy, swing your arms.", "figure": "march", "durationSec": 60 },
+        { "id": "tue2-leg-swings", "name": "Leg swings", "detail": "1 min", "cue": "Hold a wall, 10 each leg. Gentle.", "figure": "stretch", "durationSec": 60 },
+        { "id": "tue2-bw-bridge", "name": "Glute bridges, no weight", "detail": "1 min", "cue": "Squeeze at the top.", "figure": "glute-bridge", "durationSec": 60 },
+        { "id": "tue2-bw-squat", "name": "Squats, no weight", "detail": "1 min", "cue": "Slow and easy.", "figure": "goblet-squat", "durationSec": 60 }
       ]
     },
     {
-      "label": "2 · HIIT video · ~30 min",
+      "label": "2 · The circuit · 3-4 rounds · ~20 min",
       "color": "accent",
+      "instructions": "Do the 6 moves in order, rest 1 min, repeat. Aim for 3, add a 4th if you feel good. Tap a move after your last round.",
       "items": [
-        {
-          "id": "tue-hiit-video",
-          "name": "Madeline Raskin HIIT or cardio intervals",
-          "detail": "~30 min · high impact is fine",
-          "cue": "Go for it. Step the jumps out or take a break whenever you need.",
-          "figure": "jump-rope"
-        }
+        { "id": "tue2-goblet-squat", "name": "Goblet squat", "detail": "12 reps · one 15 lb", "cue": "Weight at chest, sit back.", "figure": "goblet-squat" },
+        { "id": "tue2-reverse-lunge", "name": "Reverse lunge", "detail": "10 reps, alternating · 15 lb each hand", "cue": "Step back, push through the front heel.", "figure": "reverse-lunge" },
+        { "id": "tue2-rdl", "name": "Romanian deadlift", "detail": "12 reps · 15 lb each hand", "cue": "Slow, hips back, stop at a light stretch.", "figure": "rdl" },
+        { "id": "tue2-glute-bridge", "name": "Weighted glute bridge", "detail": "15 reps · one 15 lb on hips", "cue": "Squeeze hard at the top.", "figure": "glute-bridge" },
+        { "id": "tue2-sumo-squat", "name": "Sumo squat", "detail": "12 reps · one 15 lb", "cue": "Wide feet, toes out.", "figure": "sumo-squat" },
+        { "id": "tue2-fast-march", "name": "Fast march", "detail": "1 min", "cue": "Knees high, pump your arms. Then rest 1 min.", "figure": "march", "durationSec": 60 }
       ]
     },
     {
-      "label": "3 · Abs video · optional · ~10 min",
+      "label": "3 · Core · 5 min",
       "color": "mauve",
+      "instructions": "2 rounds, slow and controlled.",
       "items": [
-        {
-          "id": "tue-abs-video",
-          "name": "Madeline Raskin abs",
-          "detail": "~10 min",
-          "cue": "Do planks on your hands, not your forearms.",
-          "figure": "dead-bug"
-        }
+        { "id": "tue2-dead-bug", "name": "Dead bug", "detail": "10 reps, alternating", "cue": "Low back pressed down.", "figure": "dead-bug" },
+        { "id": "tue2-side-plank", "name": "Side plank on your hand", "detail": "20 sec each side", "cue": "Drop the bottom knee if needed.", "figure": "side-plank" },
+        { "id": "tue2-bird-dog", "name": "Bird dog", "detail": "8 each side", "cue": "Opposite arm and leg, hips level.", "figure": "bird-dog" }
       ]
     },
     {
-      "label": "4 · Stretch · 5 min",
+      "label": "4 · Stretch · 3 min",
       "color": "neutral",
       "items": [
-        {
-          "id": "tue-stretch",
-          "name": "Hamstring, hip and quad stretch",
-          "detail": "5 min",
-          "cue": "About 30 sec per stretch, per side. Go easy on the hamstrings. Then breakfast!",
-          "figure": "stretch",
-          "durationSec": 300
-        }
+        { "id": "tue2-stretch", "name": "Hamstring, hip and quad stretch", "detail": "3 min", "cue": "30 sec per stretch, per side. Breathe.", "figure": "stretch", "durationSec": 180 }
       ]
     }
   ]
