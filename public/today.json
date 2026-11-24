@@ -1,102 +1,60 @@
 {
-  "date": "2026-11-23",
-  "title": "Monday sweaty legs",
-  "subtitle": "~30 min · at home · 15 lb dumbbells + jump rope",
-  "feeling": "Long day, so this one is simple: 5 moves, one weight, repeat 4 times. No thinking required, just follow the list.",
-  "note": "Use your 15 lb dumbbells for everything. If the hamstring feels tight on the deadlifts, go lighter or shorten the range. Rest whenever you need. Even 2 rounds is a great session tonight.",
+  "date": "2026-11-24",
+  "title": "Tuesday HIIT + abs",
+  "subtitle": "~45 min · at home · follow Madeline Raskin",
+  "feeling": "No thinking today. Press play, follow along, sweat, and start the day feeling good.",
+  "note": "Your period is close, so listen to your body. If your uterus starts to flare up, step the jumps out or stop and rest. That still counts. Eat a real breakfast when you're done.",
   "sections": [
     {
-      "label": "1 · Warm-up · 3 min",
+      "label": "1 · Before you start",
       "color": "sage",
       "items": [
         {
-          "id": "mon-march",
-          "name": "March or jog in place",
-          "detail": "1 min",
-          "cue": "Easy, swing your arms.",
-          "figure": "march",
-          "durationSec": 60
-        },
-        {
-          "id": "mon-bw-squat",
-          "name": "Squats, no weight",
-          "detail": "1 min",
-          "cue": "Slow and easy, just waking the legs up.",
-          "figure": "goblet-squat",
-          "durationSec": 60
-        },
-        {
-          "id": "mon-leg-swings",
-          "name": "Leg swings",
-          "detail": "1 min",
-          "cue": "Hold a wall, 10 swings each leg. Gentle on the hamstring.",
-          "figure": "stretch",
-          "durationSec": 60
+          "id": "tue-snack",
+          "name": "Small snack + water",
+          "detail": "5 min before",
+          "cue": "Half a banana or a few spoons of Greek yogurt with honey, plus a big glass of water.",
+          "figure": "march"
         }
       ]
     },
     {
-      "label": "2 · The circuit · 4 rounds · ~24 min",
+      "label": "2 · HIIT video · ~30 min",
       "color": "accent",
-      "instructions": "Do the 5 moves in order, rest 1 min, repeat. 4 rounds total. Tap a move after your last round.",
       "items": [
         {
-          "id": "mon-goblet-squat",
-          "name": "Goblet squat",
-          "detail": "12 reps · one 15 lb",
-          "cue": "Hold the weight at your chest, sit down and back.",
-          "figure": "goblet-squat"
-        },
-        {
-          "id": "mon-reverse-lunge",
-          "name": "Reverse lunge",
-          "detail": "10 reps, alternating · 15 lb each hand",
-          "cue": "Step back, drop the back knee, push up through the front heel.",
-          "figure": "reverse-lunge"
-        },
-        {
-          "id": "mon-rdl",
-          "name": "Romanian deadlift",
-          "detail": "12 reps · 15 lb each hand",
-          "cue": "Soft knees, push your hips back, stop when you feel a light stretch.",
-          "figure": "rdl"
-        },
-        {
-          "id": "mon-skaters",
-          "name": "Skaters",
-          "detail": "20 reps · no weight",
-          "cue": "Hop side to side, land softly on one leg.",
-          "figure": "skater"
-        },
-        {
-          "id": "mon-jump-rope",
-          "name": "Jump rope",
-          "detail": "1 min",
-          "cue": "Any pace, even easy bounces. Then rest 1 min before the next round.",
-          "figure": "jump-rope",
-          "durationSec": 60
+          "id": "tue-hiit-video",
+          "name": "Madeline Raskin HIIT or cardio intervals",
+          "detail": "~30 min · high impact is fine",
+          "cue": "Go for it. Step the jumps out or take a break whenever you need.",
+          "figure": "jump-rope"
         }
       ]
     },
     {
-      "label": "3 · Cool-down · 3 min",
+      "label": "3 · Abs video · optional · ~10 min",
+      "color": "mauve",
+      "items": [
+        {
+          "id": "tue-abs-video",
+          "name": "Madeline Raskin abs",
+          "detail": "~10 min",
+          "cue": "Do planks on your hands, not your forearms.",
+          "figure": "dead-bug"
+        }
+      ]
+    },
+    {
+      "label": "4 · Stretch · 5 min",
       "color": "neutral",
       "items": [
         {
-          "id": "mon-cool-bridge",
-          "name": "Glute bridge hold",
-          "detail": "30 sec",
-          "cue": "Feet flat, hips up, breathe.",
-          "figure": "glute-bridge",
-          "durationSec": 30
-        },
-        {
-          "id": "mon-cool-stretch",
+          "id": "tue-stretch",
           "name": "Hamstring, hip and quad stretch",
-          "detail": "2½ min",
-          "cue": "About 30 sec per stretch, per side. Slow and gentle.",
+          "detail": "5 min",
+          "cue": "About 30 sec per stretch, per side. Go easy on the hamstrings. Then breakfast!",
           "figure": "stretch",
-          "durationSec": 150
+          "durationSec": 300
         }
       ]
     }
